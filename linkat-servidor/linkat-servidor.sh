@@ -196,8 +196,8 @@ ansible-playbook "$ANSIBLEPLAY"/ldap.yml
 ansible-playbook "$ANSIBLEPLAY"/server.yml
 
 ## Configurant servidor LDAP
-#cd "$FILES_LINKAT"/
-#./ldap.sh
+cd "$FILES_LINKAT"/
+./ldap.sh
 
 ## Aplicant Playbook permisos
 #ansible-playbook "$ANSIBLEPLAY"/permisos.yml

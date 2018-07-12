@@ -1,6 +1,6 @@
 9302c769a67467a82260adbc5ebaaadc  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-14f037636e68a21d873496044bcbc37b  usr/share/doc/linkat-servidor/changelog.Debian.gz
+d9f04b35f7d4861e8bdbfd8b3922fdf5  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 55c2b889a95dd9042f2c647d46357845  usr/share/linkat/linkat-servidor/configurador/dns.yml
 be012f97395dcb3cd8287c086920bfe2  usr/share/linkat/linkat-servidor/configurador/hostname.yml
@@ -25,7 +25,7 @@ b7f80f9174b5ccbe0bf802c92949c4a2  usr/share/linkat/linkat-servidor/plantilles/ca
 9cac72a0b30a34200af396a07b9604ca  usr/share/linkat/linkat-servidor/plantilles/certinfo.ldif
 ff1611e1e889954e8d212b4268abf2e1  usr/share/linkat/linkat-servidor/plantilles/config
 e70fda06c5093ccb45a2078df396a796  usr/share/linkat/linkat-servidor/plantilles/create-home-ldap-users
-2cd5aae0c753e82e848832ce7d21f250  usr/share/linkat/linkat-servidor/plantilles/debconf.ldap-auth-config
+d71c2e5eaaae73996c6ae5d2e1a17575  usr/share/linkat/linkat-servidor/plantilles/debconf.ldap-auth-config
 fe0bea0daf650cdbad1a74f7c36d2eed  usr/share/linkat/linkat-servidor/plantilles/debconf.slapd
 ca784508bac07fc2b31297c7c7a269fd  usr/share/linkat/linkat-servidor/plantilles/exports
 b93709d106e069d668553c187c0739ff  usr/share/linkat/linkat-servidor/plantilles/for.domini

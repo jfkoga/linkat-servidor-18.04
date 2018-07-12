@@ -21,10 +21,6 @@ sudo systemctl restart slapd.service
 
 sudo ldapmodify -Y EXTERNAL -H ldapi:/// -f certinfo.ldif
 
-sudo apt install libnss-ldap
-sudo debconf-set-selections /usr/share/linkat/linkat-servidor/configurador/files/debconf.ldap-auth-config
-sudo apt install ldap-auth-config
-
 sudo auth-client-config -t nss -p lac_ldap
 
-sudo pam-auth-update
+pam-auth-update
