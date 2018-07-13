@@ -21,9 +21,16 @@ sudo systemctl restart slapd.service
 
 sudo ldapmodify -Y EXTERNAL -H ldapi:/// -f certinfo.ldif
 
-sudo apt install libnss-ldap
-sudo debconf-set-selections /usr/share/linkat/linkat-servidor/configurador/files/debconf.ldap-auth-config
-sudo apt install ldap-auth-config
+### Samba LDAP START ###
+sudo ldapadd -Q -Y EXTERNAL -H ldapi:/// -f samba.ldif
+sudo ldapmodify -Q -Y EXTERNAL -H ldapi:/// -f samba_indices.ldif
+sudo smbldap-config
+sudo smbldap-populate -g 10000 -u 10000 -r 10000
+### Samba LDAP  END  ###
+
+#sudo debconf-set-selections /usr/share/linkat/linkat-servidor/configurador/files/debconf.ldap-auth-config
+#sudo debconf-set-selections /usr/share/linkat/linkat-servidor/configurador/files/debconf.auth-client-config
+#sudo DEBIAN_FRONTEND=noninteractive apt install -y -q ldap-auth-config auth-client-config libnss-ldap
 
 sudo auth-client-config -t nss -p lac_ldap
 
