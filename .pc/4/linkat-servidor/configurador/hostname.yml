@@ -1,9 +1,9 @@
 ---
-- name: Servidor LDAP 
+- name: Servidor de centre
   hosts: servidor
   remote_user: anuser
   become: yes
   become_method: sudo
 
   roles:
-    - ldap 
+    - hostname

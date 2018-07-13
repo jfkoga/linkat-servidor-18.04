@@ -1,0 +1,106 @@
+---
+- name: Verificant permisos unitats
+  file:
+        path: /srv/exports
+        state: directory
+        owner: root
+        group: root
+        mode: 0555
+
+- name: Verificant unitat P
+  file:
+        path: /srv/exports/P
+        state: directory
+        owner: root
+        group: Professorat 
+        mode: 6770
+        recurse: yes
+
+- name: Verificant unitats S
+  file:
+        path: /srv/exports/S
+        state: directory
+        owner: root
+        group: Administradors
+        mode: 6775
+        recurse: yes
+
+- name: Verificant unitats T
+  file:
+        path: /srv/exports/T
+        state: directory
+        owner: nobody
+        group: Administradors
+        mode: 0777
+        recurse: yes
+
+- name: Verificant unitats M
+  file:
+        path: /srv/exports/M
+        state: directory
+        owner: root
+        group: Professorat
+        mode: 6770 
+        recurse: yes
+
+- name: Verificant unitats G
+  file:
+        path: /srv/exports/G
+        state: directory
+        owner: root
+        group: Gestio
+        mode: 6770
+        recurse: yes
+
+- name: Verificant Paperera
+  file:
+        path: /srv/exports/Paperera
+        state: directory
+        owner: root
+        group: Administradors
+        mode: 6775
+
+- name: Verificant Paperera P
+  file:
+        path: /srv/exports/Paperera/P
+        state: directory
+        owner: root
+        group: Professorat
+        mode: 0770
+        recurse: yes
+
+- name: Verificant Paperera S
+  file:
+        path: /srv/exports/Paperera/S
+        state: directory
+        owner: root
+        group: Administradors
+        mode: 0644
+        recurse: yes
+
+- name: Verificant Paperera T
+  file:
+        path: /srv/exports/Paperera/T
+        state: directory
+        owner: nobody
+        group: Administradors
+        mode: 0775
+        recurse: yes
+
+- name: Verificant Paperera M
+  file:
+        path: /srv/exports/Paperera/M
+        state: directory
+        owner: root
+        group: Professorat
+        mode: 0770
+        recurse: yes
+
+- name: Verificant Paperera G
+  file:
+        path: /srv/exports/Paperera/G
+        state: directory
+        owner: root
+        group: Gestio
+        mode: 0770
+        recurse: yes

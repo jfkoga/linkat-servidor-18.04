@@ -200,4 +200,5 @@ cd "$FILES_LINKAT"/
 ./ldap.sh
 
 ## Aplicant Playbook permisos
-#ansible-playbook "$ANSIBLEPLAY"/permisos.yml
+ansible-playbook "$ANSIBLEPLAY"/permisos.yml
+sudo chmod -R +x /srv/exports/*

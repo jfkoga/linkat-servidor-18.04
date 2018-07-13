@@ -2,15 +2,19 @@
 - name: Aplicant la configuració del paquet slapd
   command: debconf-set-selections /usr/share/linkat/linkat-servidor/configurador/files/debconf.slapd
 
-#- name: Aplicant la configuració del paquet ldap-auth-config
-#  command: debconf-set-selections /usr/share/linkat/linkat-servidor/configurador/files/debconf.ldap-auth-config
+- name: Aplicant la configuració del paquet ldap-auth-config
+  command: debconf-set-selections /usr/share/linkat/linkat-servidor/configurador/files/debconf.ldap-auth-config
 
-- name: Instal·lant el paquet slapd
+- name: Aplicant la configuració del paquet auth-client-config
+  command: debconf-set-selections /usr/share/linkat/linkat-servidor/configurador/files/debconf.auth-client-config
+
+- name: Instal·lant els paquets del servidor LDAP
   apt: pkg={{ item }} state=present update_cache=yes
   with_items:
   - slapd
   - ldap-utils
-#  - ldap-auth-config
+  - ldap-auth-config
+  - auth-client-config
 
 - name: Copiant fitxers de configuració LDAP
   copy: src=files/80-linkat-server-lightdm.conf dest=/usr/share/lightdm/lightdm.conf.d/80-linkat-server-lightdm.conf
