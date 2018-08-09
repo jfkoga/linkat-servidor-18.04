@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 ldapadd -x -D cn=admin,dc=__DOMAIN__ -w __PASSROOT__ -f ldapconfig.ldif
 ldapadd -x -D cn=admin,dc=__DOMAIN__ -w __PASSROOT__ -f grups.ldif
 sudo ldapmodify -Q -Y EXTERNAL -H ldapi:/// -f uid_index.ldif
@@ -23,11 +24,13 @@ sudo ldapmodify -Y EXTERNAL -H ldapi:/// -f certinfo.ldif
 ### Samba LDAP START ###
 sudo ldapadd -Q -Y EXTERNAL -H ldapi:/// -f samba.ldif
 sudo ldapmodify -Q -Y EXTERNAL -H ldapi:/// -f samba_indices.ldif
+sudo smbldap-config
+sudo smbldap-populate -g 10000 -u 10000 -r 10000
 ### Samba LDAP  END  ###
 
-LOCALSID=$(sudo net getlocalsid | awk ' {print $6} ')
-sed -i s/__GETLOCALSID__/"$LOCALSID"/g smbldap.conf
-sed -i s/__GETLOCALSID__/"$LOCALSID"/g /etc/smbldap-tools/smbldap.conf
+#sudo debconf-set-selections /usr/share/linkat/linkat-servidor/configurador/files/debconf.ldap-auth-config
+#sudo debconf-set-selections /usr/share/linkat/linkat-servidor/configurador/files/debconf.auth-client-config
+#sudo DEBIAN_FRONTEND=noninteractive apt install -y -q ldap-auth-config auth-client-config libnss-ldap
 
 sudo auth-client-config -t nss -p lac_ldap
 
