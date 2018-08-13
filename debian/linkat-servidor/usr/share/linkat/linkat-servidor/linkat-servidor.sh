@@ -197,20 +197,16 @@ ansible-playbook "$ANSIBLEPLAY"/server.yml
 
 ## Configurant servidor LDAP
 cd "$FILES_LINKAT"/
-./ldap.sh
-./smbldap-populate.sh
-
+"$FILES_LINKAT"/ldap.sh
+"$FILES_LINKAT"/smbldap-populate.sh
 
 ## Aplicant Playbook permisos
 ansible-playbook "$ANSIBLEPLAY"/permisos.yml
 sudo chmod -R +x /srv/exports/*
 
 ## Nextcloud
-sudo snap install nextcloud
-nextcloud.manual-install lnadmin linkat
-sudo nextcloud.enable-https self-signed
-sudo snap set nextcloud ports.http=81
-sudo snap set nextcloud ports.https=10443
+"$FILES_LINKAT"/nextcloud.sh
 
 ## Onlyoffice
-/usr/share/linkat/linkat-onlyoffice/linkat-onlyoffice.sh
+"$FILES_LINKAT"/onlyoffice.sh
+
