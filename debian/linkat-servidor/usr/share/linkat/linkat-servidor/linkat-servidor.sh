@@ -208,5 +208,9 @@ sudo chmod -R +x /srv/exports/*
 "$FILES_LINKAT"/nextcloud.sh
 
 ## Onlyoffice
+if [ -f /etc/nginx/conf.d/onlyoffice-documentserver.conf ]; then
+	sudo chattr -i /etc/nginx/conf.d/onlyoffice-documentserver.conf
+fi
 "$FILES_LINKAT"/onlyoffice.sh
-
+ansible-playbook "$ANSIBLEPLAY"/onlyoffice.yml
+chattr +i /etc/nginx/conf.d/onlyoffice-documentserver.conf
