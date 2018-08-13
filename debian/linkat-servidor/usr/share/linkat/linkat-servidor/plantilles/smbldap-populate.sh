@@ -2,9 +2,9 @@
 
 spawn smbldap-populate -g 10000 -u 10000 -r 10000 
 expect "New password:"
-send -- "__PASSROOT__\r"
+send -- "$NEW_PASSROOT\r"
 
 expect "Retype new password:"
-send -- "__PASSROOT__\r"
+send -- "$NEW_PASSROOT\r"
 
 expect eof
