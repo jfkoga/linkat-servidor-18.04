@@ -13,7 +13,7 @@
 - name: Generant claus Onlyoffice
   command: openssl req -x509 -nodes -days 36500 -newkey rsa:2048 -keyout /etc/ssl/onlyoffice/onlyoffice.key -out /etc/ssl/onlyoffice/onlyoffice.crt -subj "/C=ES/ST=Catalunya/L=Barcelona/O=Generalitat de Catalunya/OU=Departament Ensenyament/CN=xtec.cat"
 
-- name: Instal·lant els paquets de l'Onlyoffice 
+- name: Instal·lant els paquets del servidor LDAP
   apt: pkg={{ item }} state=present update_cache=yes
   with_items:
   - onlyoffice-documentserver 
