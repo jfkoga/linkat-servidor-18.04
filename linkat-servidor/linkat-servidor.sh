@@ -41,6 +41,18 @@ check_ip()
 	fi
 }
 
+## Revisar connexió
+check_connexio()
+{
+	sudo hping3 -S google.com -p 443 -c 4
+	if [ $? -eq 0 ]; then
+		CONNEXIO="1"
+	else
+		echo -en "Error de connexió: Reviseu la configuració de xarxa"
+		exit 12
+	fi
+}
+
 ## Revisar contrasenya
 check_pass()
 {
@@ -113,7 +125,6 @@ while [ "$ERROR" -eq 1 ]; do
 	ERROR="0"
 	formulari
 	check_ip IP "$NEW_IP"
-#	check_ip Màscara "$NEW_MASK"
 	check_ip Passarel·la "$NEW_GW"
 	check_ip DNS "$NEW_DNS1"
   check_ip DNS "$NEW_DNS2"
@@ -195,17 +206,21 @@ systemctl restart bind9.service
 ansible-playbook "$ANSIBLEPLAY"/ldap.yml
 ansible-playbook "$ANSIBLEPLAY"/server.yml
 
+## Revisa connexió
+check_connexio
+
 ## Configurant servidor LDAP
 cd "$FILES_LINKAT"/
-"$FILES_LINKAT"/ldap.sh
-"$FILES_LINKAT"/smbldap-populate.sh
+sudo "$FILES_LINKAT"/ldap.sh
+sudo "$FILES_LINKAT"/smbldap-populate.sh
 
-## Aplicant Playbook permisos
+## Aplicant Playbook permisos i ACLs unitats
 ansible-playbook "$ANSIBLEPLAY"/permisos.yml
 sudo chmod -R +x /srv/exports/*
+ansible-playbook "$ANSIBLEPLAY"/acl.yml
 
 ## Nextcloud
-"$FILES_LINKAT"/nextcloud.sh
+#sudo "$FILES_LINKAT"/nextcloud.sh
 
 ## Onlyoffice
 #if [ -f /etc/nginx/conf.d/onlyoffice-documentserver.conf ]; then
@@ -215,3 +230,9 @@ sudo chmod -R +x /srv/exports/*
 #ansible-playbook "$ANSIBLEPLAY"/onlyoffice.yml
 #chattr +i /etc/nginx/conf.d/onlyoffice-documentserver.conf
 
+yad --width=300 --title="Linkat Servidor de centre" --text="\nEl Servidor de centre s'ha de reiniciar per aplicar els canvis" \
+--image="/usr/share/linkat/linkat-servidor/linkat-servidor-banner.png" \
+--button="D'acord" --button="Cancel·la":11
+if [ $? -eq 0 ]; then
+	sudo shutdown -r now
+fi

@@ -62,7 +62,7 @@
 
 - name: Verificant Paperera P
   file:
-        path: /srv/exports/Paperera/P
+        path: /srv/exports/Paperera/Paperera_Unitat_P
         state: directory
         owner: root
         group: Professorat
@@ -71,7 +71,7 @@
 
 - name: Verificant Paperera S
   file:
-        path: /srv/exports/Paperera/S
+        path: /srv/exports/Paperera/Paperera_Unitat_S
         state: directory
         owner: root
         group: Administradors
@@ -80,7 +80,7 @@
 
 - name: Verificant Paperera T
   file:
-        path: /srv/exports/Paperera/T
+        path: /srv/exports/Paperera/Paperera_Unitat_T
         state: directory
         owner: nobody
         group: Administradors
@@ -89,7 +89,7 @@
 
 - name: Verificant Paperera M
   file:
-        path: /srv/exports/Paperera/M
+        path: /srv/exports/Paperera/Paperera_Unitat_M
         state: directory
         owner: root
         group: Professorat
@@ -98,7 +98,7 @@
 
 - name: Verificant Paperera G
   file:
-        path: /srv/exports/Paperera/G
+        path: /srv/exports/Paperera/Paperera_Unitat_G
         state: directory
         owner: root
         group: Gestio
