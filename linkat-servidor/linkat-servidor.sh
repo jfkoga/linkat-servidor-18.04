@@ -203,11 +203,11 @@ ansible-playbook "$ANSIBLEPLAY"/dns.yml
 
 systemctl restart bind9.service
 
-ansible-playbook "$ANSIBLEPLAY"/ldap.yml
-ansible-playbook "$ANSIBLEPLAY"/server.yml
-
 ## Revisa connexió
 check_connexio
+
+ansible-playbook "$ANSIBLEPLAY"/ldap.yml
+ansible-playbook "$ANSIBLEPLAY"/server.yml
 
 ## Configurant servidor LDAP
 cd "$FILES_LINKAT"/
@@ -230,7 +230,7 @@ ansible-playbook "$ANSIBLEPLAY"/acl.yml
 #ansible-playbook "$ANSIBLEPLAY"/onlyoffice.yml
 #chattr +i /etc/nginx/conf.d/onlyoffice-documentserver.conf
 
-yad --width=300 --title="Linkat Servidor de centre" --text="\nEl Servidor de centre s'ha de reiniciar per aplicar els canvis" \
+yad --width=300 --title="Linkat Servidor de centre" --text="\nLa configuració s'ha aplicat.\n\nEl Servidor de centre s'ha de reiniciar per aplicar els canvis.\n\nVoleu reiniciar ara?" \
 --image="/usr/share/linkat/linkat-servidor/linkat-servidor-banner.png" \
 --button="D'acord" --button="Cancel·la":11
 if [ $? -eq 0 ]; then
