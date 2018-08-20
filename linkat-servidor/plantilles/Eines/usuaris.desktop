@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=User's management LDAP
+Name[ca]=Gestió d'Usuaris LDAP
+Name[es]=Gestión de Usuarios LDAP
+Name[en]=User's management LDAP
+Comment=Gestió d'usuaris del servidor LDAP Linkat
+Exec=xdg-open https://localhost:10000
+Terminal=false
+Type=Application
+Icon=/usr/share/webmin/images/smalllogo.gif
+Categories=Settings;System;SystemSetup;
+StartupNotify=true
+GenericName[ca]=Gestió d'Usuaris LDAP
+GenericName[es]=Gestión de Usuarios LDAP
+GenericName[en]=User's management LDAP
+GenericName[ca_ES]=Gestió d'Usuaris LDAP
