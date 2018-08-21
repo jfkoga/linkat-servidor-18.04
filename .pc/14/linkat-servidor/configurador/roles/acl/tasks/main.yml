@@ -3,36 +3,6 @@
   acl:
         path: /srv/exports/P
         state: present
-        entry: "default:user::rwx"
-
-- name: Verificant ACL unitats S
-  acl:
-        path: /srv/exports/S
-        state: present
-        entry: "default:user::rwx"
-
-- name: Verificant ACL unitats T
-  acl:
-        path: /srv/exports/T
-        state: present
-        entry: "default:user::rwx"
-
-- name: Verificant ACL unitats M
-  acl:
-        path: /srv/exports/M
-        state: present
-        entry: "default:user::rwx"
-
-- name: Verificanti ACL unitats G
-  acl:
-        path: /srv/exports/G
-        state: present
-        entry: "default:user::rwx"
-
-- name: Verificant ACL unitat P
-  acl:
-        path: /srv/exports/P
-        state: present
         entry: "default:group::rwx"
         
 - name: Verificant ACL unitats S

@@ -1,0 +1,8 @@
+---
+- name: Verificant Escriptori LNADMIN
+  file:
+        path: /home/lnadmin/Escriptori
+        state: directory
+
+- name: Copiant LNADMIN
+  copy: src=files/Eines dest=/home/lnadmin/Escriptori/
