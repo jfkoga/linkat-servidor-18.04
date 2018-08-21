@@ -17,9 +17,6 @@
 - name: Copiant fitxers de configuració SAMBA
   copy: src=files/gestio.conf dest=/etc/samba/smb.conf.d/
 
-- name: Copiant fitxers de configuració SAMBA
-  copy: src=files/smb-ldap.conf dest=/etc/samba/smb.conf.d/
-
 - file:
         path: /etc/samba/smb.conf
         owner: root
