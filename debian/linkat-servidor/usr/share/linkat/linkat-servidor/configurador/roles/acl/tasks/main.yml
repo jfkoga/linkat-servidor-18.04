@@ -351,3 +351,18 @@
         entry: "user:lnadmin:rwx"
         recursive: yes
         state: present
+
+- name: Verificant ACL minidlna unitats M
+  acl:
+        path: /srv/exports/M
+        state: present
+        entry: "user:minidlna:rwx"
+        recursive: yes
+
+- name: Verificant ACL minidlna unitats M
+  acl:
+        path: /srv/exports/M
+        state: present
+        entry: "default:user:minidlna:rwx"
+        recursive: yes
+
