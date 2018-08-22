@@ -216,6 +216,7 @@ sudo "$FILES_LINKAT"/smbldap-populate.sh
 
 ## Aplicant Playbook permisos i ACLs unitats
 ansible-playbook "$ANSIBLEPLAY"/permisos.yml
+sudo chmod -R +x /srv/exports/*
 ansible-playbook "$ANSIBLEPLAY"/acl.yml
 
 ## Nextcloud

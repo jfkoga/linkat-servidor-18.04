@@ -1,0 +1,15 @@
+---
+- name: Servidor de centre
+  hosts: servidor
+  remote_user: anuser
+  become: yes
+  become_method: sudo
+
+  roles:
+    - unitats
+    - nfs
+    - smb
+    - dlna
+    - webmin
+#    - clam_antivirus
+#    - jclic
