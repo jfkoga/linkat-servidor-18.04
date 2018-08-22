@@ -219,7 +219,7 @@ ansible-playbook "$ANSIBLEPLAY"/permisos.yml
 ansible-playbook "$ANSIBLEPLAY"/acl.yml
 
 ## Nextcloud
-#sudo "$FILES_LINKAT"/nextcloud.sh
+sudo "$FILES_LINKAT"/nextcloud.sh
 
 ## Onlyoffice
 #if [ -f /etc/nginx/conf.d/onlyoffice-documentserver.conf ]; then

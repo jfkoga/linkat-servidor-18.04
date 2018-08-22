@@ -1,13 +1,13 @@
 9302c769a67467a82260adbc5ebaaadc  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-d0295399146aa88123696c2215cda4a5  usr/share/doc/linkat-servidor/changelog.Debian.gz
+33d2a3d8dd3a5b896d910830494ad0f9  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 12bf97bdc06bc7d94c9d2b0f95866dbc  usr/share/linkat/linkat-servidor/configurador/acl.yml
 f4ff368d7bacced78229fa16c0475502  usr/share/linkat/linkat-servidor/configurador/dns.yml
 793b6d8a2dc3579d9536adc94785cc18  usr/share/linkat/linkat-servidor/configurador/hostname.yml
 c0d48f7e5b65248095c47286f5eb6be2  usr/share/linkat/linkat-servidor/configurador/ldap.yml
 8c4d159d308a119ab10b389b320842d6  usr/share/linkat/linkat-servidor/configurador/onlyoffice.yml
-5097f138bab418b5c8361d234597f367  usr/share/linkat/linkat-servidor/configurador/permisos.yml
+cf920d9f35afb75036ab47d67b8e0430  usr/share/linkat/linkat-servidor/configurador/permisos.yml
 65029394398577c6f0b6917cc6defdc1  usr/share/linkat/linkat-servidor/configurador/roles/acl/tasks/main.yml
 72b254d9531ef9de7eeeff207ac025da  usr/share/linkat/linkat-servidor/configurador/roles/dlna/tasks/main.yml
 decfc0a78c214559ad7f7c4f61b37c4c  usr/share/linkat/linkat-servidor/configurador/roles/dns/tasks/main.yml
@@ -23,7 +23,7 @@ d8631754660699e763a277703da9f84f  usr/share/linkat/linkat-servidor/configurador/
 3997dcbd55072f9ce39170e48beff36e  usr/share/linkat/linkat-servidor/configurador/server.yml
 96b435d8f9ff11b4815d6834949e8187  usr/share/linkat/linkat-servidor/configurador/vars/main.yml
 557ffbf48d44e2118b2a7778b1c6c13d  usr/share/linkat/linkat-servidor/linkat-servidor-banner.png
-095dfc48862ca9827afcc3f641d6ca91  usr/share/linkat/linkat-servidor/linkat-servidor.sh
+88ba59874351cf7c54faeae7ea0b56ea  usr/share/linkat/linkat-servidor/linkat-servidor.sh
 36daa98e1dbe8fd1413da4005eef6a8a  usr/share/linkat/linkat-servidor/plantilles/50-linkat-net-config.yaml
 7552ab83a00b8480a19de591894f8210  usr/share/linkat/linkat-servidor/plantilles/80-linkat-server-lightdm.conf
 b7f80f9174b5ccbe0bf802c92949c4a2  usr/share/linkat/linkat-servidor/plantilles/ca.info
@@ -62,7 +62,7 @@ cdd060c32443ad620d3b9bb905bbafb7  usr/share/linkat/linkat-servidor/plantilles/re
 c7be4aca7d2e32c02b051fd939eab9f3  usr/share/linkat/linkat-servidor/plantilles/samba.ldif
 ff4ab137b613862efa82e728dd8b7e44  usr/share/linkat/linkat-servidor/plantilles/samba_indices.ldif
 620d8c19560e8bc7fc0d7d2c6e1ebc99  usr/share/linkat/linkat-servidor/plantilles/servidor.info
-b6a98773157b0da988dba61d0beadc29  usr/share/linkat/linkat-servidor/plantilles/smb-ldap.conf
+0ef43f815791e78fd6b4141af68f618d  usr/share/linkat/linkat-servidor/plantilles/smb-ldap.conf
 b142026c681182eaec5b4dd8107fde1e  usr/share/linkat/linkat-servidor/plantilles/smb.conf
 eb3b383e89ac3538482a3dac40ed1b9c  usr/share/linkat/linkat-servidor/plantilles/smbldap-populate.sh
 e3cff3b847491bfc6bc30f8f3a5b62b3  usr/share/linkat/linkat-servidor/plantilles/smbldap.conf
