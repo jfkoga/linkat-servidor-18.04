@@ -213,6 +213,7 @@ ansible-playbook "$ANSIBLEPLAY"/server.yml
 cd "$FILES_LINKAT"/
 sudo "$FILES_LINKAT"/ldap.sh
 sudo "$FILES_LINKAT"/smbldap-populate.sh
+sudo smbpasswd -w "$NEW_PASSROOT1"
 
 ## Aplicant Playbook permisos i ACLs unitats
 ansible-playbook "$ANSIBLEPLAY"/permisos.yml

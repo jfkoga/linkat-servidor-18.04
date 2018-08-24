@@ -11,5 +11,5 @@
     - smb
     - dlna
     - webmin
-    - clamav
+#    - clam_antivirus
 #    - jclic

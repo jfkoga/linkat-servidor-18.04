@@ -28,6 +28,7 @@ sudo nextcloud.occ config:app:set user_ldap ldap_tls --value="0"
 sudo nextcloud.occ config:app:set user_ldap ldap_userfilter_objectclass --value="inetOrgPerson\norganizationalPerson\nperson"
 sudo nextcloud.occ config:app:set user_ldap ldap_userlist_filter --value="(|(objectclass=inetOrgPerson)(objectclass=organizationalPerson)(objectclass=person))"
 sudo nextcloud.occ config:app:set user_ldap types --value="authentication"
+sudo snap restart nextcloud
 #sudo nextcloud.occ app:install onlyoffice
 #sudo nextcloud.occ app:enable onlyoffice
 #sudo nextcloud.occ config:app:set onlyoffice DocumentServerUrl --value="https://__IP__:10445/"

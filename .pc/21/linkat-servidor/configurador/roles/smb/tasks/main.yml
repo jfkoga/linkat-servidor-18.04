@@ -1,28 +1,25 @@
 ---
-- name: Copiant fitxers de configuració SAMBA smb
+- name: Copiant fitxers de configuració SAMBA 
   copy: src=files/smb.conf dest=/etc/samba/smb.conf
 
-- name: Copiant fitxers de configuració SAMBA professorat
+- name: Copiant fitxers de configuració SAMBA
   copy: src=files/professorat.conf dest=/etc/samba/smb.conf.d/
 
-- name: Copiant fitxers de configuració SAMBA programari
+- name: Copiant fitxers de configuració SAMBA
   copy: src=files/programari.conf dest=/etc/samba/smb.conf.d/
 
-- name: Copiant fitxers de configuració SAMBA treball
+- name: Copiant fitxers de configuració SAMBA
   copy: src=files/treball.conf dest=/etc/samba/smb.conf.d/
 
-- name: Copiant fitxers de configuració SAMBA multimèdia
+- name: Copiant fitxers de configuració SAMBA
   copy: src=files/multimedia.conf dest=/etc/samba/smb.conf.d/
 
-- name: Copiant fitxers de configuració SAMBA gestió
+- name: Copiant fitxers de configuració SAMBA
   copy: src=files/gestio.conf dest=/etc/samba/smb.conf.d/
 
-- name: Copiant fitxers de configuració SAMBA smb-ldap
+- name: Copiant fitxers de configuració SAMBA
   copy: src=files/smb-ldap.conf dest=/etc/samba/smb.conf.d/
 
-- name: Copiant fitxers de configuració SAMBA paperera
-  copy: src=files/paperera_xarxa.conf dest=/etc/samba/smb.conf.d/
-  
 - file:
         path: /etc/samba/smb.conf
         owner: root
