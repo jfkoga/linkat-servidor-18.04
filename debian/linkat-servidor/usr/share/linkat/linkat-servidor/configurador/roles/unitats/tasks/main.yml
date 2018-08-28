@@ -63,13 +63,13 @@
         group: root
         mode: 0770
 
-- name: Verificant Paperera S
-  file:
-        path: /srv/exports/Paperera/Paperera_Unitat_S
-        state: directory
-        owner: root
-        group: root
-        mode: 0644
+#- name: Verificant Paperera S
+#  file:
+#        path: /srv/exports/Paperera/Paperera_Unitat_S
+#        state: directory
+#        owner: root
+#        group: root
+#        mode: 0644
 
 - name: Verificant Paperera T
   file:

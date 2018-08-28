@@ -6,10 +6,4 @@
   become_method: sudo
 
   roles:
-    - unitats
-    - nfs
-    - smb
-    - dlna
-    - webmin
     - clamav
-#    - jclic

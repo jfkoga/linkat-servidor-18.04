@@ -71,7 +71,7 @@ check_pass()
 
 formulari()
 {
-res=$(yad --width=400 --title="Linkat Servidor de centre" --text="\nIntroduexi els valors per configurar el sevidor de centre\nTots els camps són obligatoris\n\nConfiguracions del servidor:\n" \
+res=$(yad --width=400 --title="Linkat Servidor de centre" --text="\nIntroduïu els valors per configurar el sevidor de centre.\nCal emplenar tots els camps.\n\nConfiguracions del servidor:\n" \
 --image="/usr/share/linkat/linkat-servidor/linkat-servidor-banner.png" \
 --form --item-separator=" " \
 --field="Nom del servidor" \
@@ -111,7 +111,7 @@ NEW_PASSLNADMIN2=$(echo "$res" | awk -F"|" '{print $12}')
 
 validar_formulari()
 {
-yad --width=400 --title="Linkat Servidor de centre" --text="\nSón correctes les dades següents?\n\nServidor: $NEW_NAME\nDomini: $NEW_DOMAIN\nDispositiu: $NEW_DEV\nIP: $NEW_IP\nMàscara: $NEW_MASK\nPassarel·la: $NEW_GW\nDNS Primària: $NEW_DNS1\nDNS Secundària: $NEW_DNS2" \
+yad --width=400 --title="Linkat Servidor de centre" --text="\nLes dades següents són correctes?\n\nServidor: $NEW_NAME\nDomini: $NEW_DOMAIN\nDispositiu: $NEW_DEV\nIP: $NEW_IP\nMàscara: $NEW_MASK\nPassarel·la: $NEW_GW\nDNS Primària: $NEW_DNS1\nDNS Secundària: $NEW_DNS2" \
 --image="/usr/share/linkat/linkat-servidor/linkat-servidor-banner.png" \
 --button="D'acord" --button="Cancel·la":11
 res1="$?"
@@ -213,7 +213,6 @@ ansible-playbook "$ANSIBLEPLAY"/server.yml
 cd "$FILES_LINKAT"/
 sudo "$FILES_LINKAT"/ldap.sh
 sudo "$FILES_LINKAT"/smbldap-populate.sh
-sudo smbpasswd -w "$NEW_PASSROOT1"
 
 ## Aplicant Playbook permisos i ACLs unitats
 ansible-playbook "$ANSIBLEPLAY"/permisos.yml
@@ -230,7 +229,7 @@ sudo "$FILES_LINKAT"/nextcloud.sh
 #ansible-playbook "$ANSIBLEPLAY"/onlyoffice.yml
 #chattr +i /etc/nginx/conf.d/onlyoffice-documentserver.conf
 
-yad --width=300 --title="Linkat Servidor de centre" --text="\nLa configuració s'ha aplicat.\n\nEl Servidor de centre s'ha de reiniciar per aplicar els canvis.\n\nVoleu reiniciar ara?" \
+yad --width=300 --title="Linkat Servidor de centre" --text="\nLa configuració ha estat aplicada.\n\nEl Servidor de centre s'ha de reiniciar per aplicar els canvis.\n\nVoleu reiniciar-lo ara?" \
 --image="/usr/share/linkat/linkat-servidor/linkat-servidor-banner.png" \
 --button="D'acord" --button="Cancel·la":11
 if [ $? -eq 0 ]; then

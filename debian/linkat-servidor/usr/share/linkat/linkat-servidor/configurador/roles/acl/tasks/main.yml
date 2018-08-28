@@ -80,12 +80,12 @@
         entry: "default:group::rwx"
         recursive: yes
 
-- name: Verificant ACL Paperera S
-  acl:
-        path: /srv/exports/Paperera/Paperera_Unitat_S
-        state: present
-        entry: "default:group::rwx"
-        recursive: yes
+#- name: Verificant ACL Paperera S
+#  acl:
+#        path: /srv/exports/Paperera/Paperera_Unitat_S
+#        state: present
+#        entry: "default:group::rwx"
+#        recursive: yes
 
 - name: Verificant ACL Paperera T
   acl:
@@ -122,6 +122,13 @@
         entry: "user:lnadmin:rwx"
         recursive: yes
 
+- name: Verificant ACL lnadmin unitats T
+  acl:
+        path: /srv/exports/T
+        state: present
+        entry: "default:user:lnadmin:rwx"
+        recursive: yes
+
 - name: Verificant ACL lnadmin unitats S
   acl:
         path: /srv/exports/S
@@ -150,6 +157,13 @@
         entry: "default:user:lnadmin:rwx"
         recursive: yes
 
+- name: Verificant ACL lnadmin unitats T
+  acl:
+        path: /srv/exports/T
+        state: present
+        entry: "user:lnadmin:rwx"
+        recursive: yes
+
 - name: Verificant ACL lnadmin unitats S
   acl:
         path: /srv/exports/S
@@ -176,6 +190,13 @@
         path: /srv/exports/P
         state: present
         entry: "user:lnadmin:rwx"
+        recursive: yes
+
+- name: Verificant ACL clamav unitats T
+  acl:
+        path: /srv/exports/T
+        state: present
+        entry: "default:user:clamav:rwx"
         recursive: yes
 
 - name: Verificant ACL clamav unitats S
@@ -205,6 +226,14 @@
         state: present
         entry: "default:user:clamav:rwx"
         recursive: yes
+
+- name: Verificant ACL clamav unitats T
+  acl:
+        path: /srv/exports/T
+        state: present
+        entry: "user:clamav:rwx"
+        recursive: yes
+
 - name: Verificant ACL clamav unitats S
   acl:
         path: /srv/exports/S
@@ -289,13 +318,6 @@
         recursive: yes
         state: present
 
-- name: Verificant ACL Gestio Paperera G
-  acl:
-        path: /srv/exports/Paperera/Paperera_Unitat_G
-        entry: "g:Gestio:rwx"
-        recursive: yes
-        state: present
-
 - name: Verificant ACL lnadmin Paperera T
   acl:
         path: /srv/exports/Paperera/Paperera_Unitat_T
@@ -356,13 +378,26 @@
   acl:
         path: /srv/exports/M
         state: present
-        entry: "user:minidlna:rwx"
+        entry: "user:minidlna:r-x"
         recursive: yes
 
 - name: Verificant ACL minidlna unitats M
   acl:
         path: /srv/exports/M
         state: present
-        entry: "default:user:minidlna:rwx"
+        entry: "default:user:minidlna:r-x"
         recursive: yes
 
+- name: Verificant ACL minidlna Paperera M
+  acl:
+        path: /srv/exports/Paperera/Paperera_Unitat_M
+        state: present
+        entry: "user:minidlna:r-x"
+        recursive: yes
+
+- name: Verificant ACL minidlna Paperera M
+  acl:
+        path: /srv/exports/Paperera/Paperera_Unitat_M
+        state: present
+        entry: "default:user:minidlna:r-x"
+        recursive: yes

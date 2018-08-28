@@ -25,8 +25,6 @@ sudo ldapadd -Q -Y EXTERNAL -H ldapi:/// -f samba.ldif
 sudo ldapmodify -Q -Y EXTERNAL -H ldapi:/// -f samba_indices.ldif
 ### Samba LDAP  END  ###
 
-sudo smbpasswd -w __PASSROOT__
-
 LOCALSID=$(sudo net getlocalsid | awk ' {print $6} ')
 sed -i s/__GETLOCALSID__/"$LOCALSID"/g smbldap.conf
 sed -i s/__GETLOCALSID__/"$LOCALSID"/g /etc/smbldap-tools/smbldap.conf

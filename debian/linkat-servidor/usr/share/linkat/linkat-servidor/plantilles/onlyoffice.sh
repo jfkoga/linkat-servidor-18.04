@@ -7,7 +7,7 @@ sudo -i -u postgres psql -c "GRANT ALL privileges ON DATABASE onlyoffice TO only
 
 sudo mkdir -p /srv/app/onlyoffice/DocumentServer/data/certs/
 
-openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout /etc/ssl/onlyoffice/onlyoffice.key -out /etc/ssl/onlyoffice/onlyoffice.crt -subj "/C=ES/ST=Catalunya/L=Barcelona/O=Generalitat de Catalunya/OU=Departament Ensenyament/CN=xtec.cat"
+openssl req -x509 -nodes -days 36500 -newkey rsa:2048 -keyout /etc/ssl/onlyoffice/onlyoffice.key -out /etc/ssl/onlyoffice/onlyoffice.crt -subj "/C=ES/ST=Catalunya/L=Barcelona/O=Generalitat de Catalunya/OU=Departament Ensenyament/CN=xtec.cat"
 
 docker pull onlyoffice/documentserver
 
