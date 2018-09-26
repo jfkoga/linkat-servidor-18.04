@@ -212,6 +212,11 @@ ansible-playbook "$ANSIBLEPLAY"/server.yml
 ## Configurant servidor LDAP
 cd "$FILES_LINKAT"/
 sudo "$FILES_LINKAT"/ldap.sh
+sudo "$FILES_LINKAT"/ldap-auth.sh
+
+## Configuració servidor SAMBA
+ansible-playbook "$ANSIBLEPLAY"/smb.yml
+sudo "$FILES_LINKAT"/ldap-samba.sh
 sudo "$FILES_LINKAT"/smbldap-populate.sh
 
 ## Aplicant Playbook permisos i ACLs unitats

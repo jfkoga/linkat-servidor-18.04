@@ -1,4 +1,5 @@
 dn: cn=config
 changetype: modify
-replace: olcLogLevel
+add: olcLogLevel
 olcLogLevel: stats
+
