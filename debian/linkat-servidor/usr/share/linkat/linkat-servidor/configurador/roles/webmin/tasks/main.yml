@@ -11,8 +11,8 @@
 - name: Copiant fitxers de configuració WEBMIN
   copy: src=files/websambaconfig dest=/etc/webmin/samba/config
 
-- name: Copiant fitxers de configuració WEBMIN
-  copy: src=files/webldap-useradminconfig dest=/etc/webmin/ldap-useradmin/config
+  #- name: Copiant fitxers de configuració WEBMIN
+  #  copy: src=files/webldap-useradminconfig dest=/etc/webmin/ldap-useradmin/config
 
 - file:
         path: /etc/webmin/config
@@ -37,12 +37,12 @@
         owner: root
         group: root
         mode: 0600
-- file:
-        path: /etc/webmin/ldap-useradmin/config
-        owner: root
-        group: root
-        mode: 0600
-
+        
+        #- file:
+        #path: /etc/webmin/ldap-useradmin/config
+        #owner: root
+        #group: root
+        #mode: 0600
 
 - name: Activant servei WEBMIN
   service: name=webmin state=started enabled=yes

@@ -43,6 +43,12 @@
 - name: Copiant fitxers de configuració SMBLDAP
   copy: src=files/smbldap_bind.conf dest=/etc/smbldap-tools/smbldap_bind.conf
 
+- name: Copiant fitxers de configuració LDAPSCRIPTS
+  copy: src=files/ldapscripts.conf dest=/etc/ldapscripts/ldapscripts.conf
+
+- name: Copiant fitxers de configuració LDAPSCRIPTS
+  copy: src=files/ldapscripts.passwd dest=/etc/ldapscripts/ldapscripts.passwd
+
 - file:
         path: /usr/share/lightdm/lightdm.conf.d/80-linkat-server-lightdm.conf
         owner: root
@@ -84,7 +90,17 @@
         owner: root
         group: root
         mode: 0600
+- file:
+        path: /etc/ldapscripts/ldapscripts.conf
+        owner: root
+        group: root
+        mode: 0644
 
+- file:
+        path: /etc/ldapscripts/ldapscripts.passwd
+        owner: root
+        group: root
+        mode: 0400
 
 - name: Activant servei LDAP
   service: name=slapd state=started enabled=yes
