@@ -1,6 +1,6 @@
 9302c769a67467a82260adbc5ebaaadc  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-09f521b1a28ec9d260ffa9d46c5fe95e  usr/share/doc/linkat-servidor/changelog.Debian.gz
+06d3471561ccda1b08c769247d7c2408  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 12bf97bdc06bc7d94c9d2b0f95866dbc  usr/share/linkat/linkat-servidor/configurador/acl.yml
 c6742688cadae7ff2b228990a9fa5e64  usr/share/linkat/linkat-servidor/configurador/clamav.yml
@@ -21,7 +21,7 @@ decfc0a78c214559ad7f7c4f61b37c4c  usr/share/linkat/linkat-servidor/configurador/
 7550afdf6b194c81c769d59afcf91f90  usr/share/linkat/linkat-servidor/configurador/roles/permisos/tasks/main.yml
 e3fdd3494be07bc38d0abb94127738aa  usr/share/linkat/linkat-servidor/configurador/roles/smb/tasks/main.yml
 50970f91ced816c905b9f4ff2792961e  usr/share/linkat/linkat-servidor/configurador/roles/unitats/tasks/main.yml
-36cbaed81d8dc0f00cbc8a3780713d83  usr/share/linkat/linkat-servidor/configurador/roles/webmin/tasks/main.yml
+537d579b31d18f78edf07978598888de  usr/share/linkat/linkat-servidor/configurador/roles/webmin/tasks/main.yml
 0efd7af034ff055b4e55e0d7a30cc4da  usr/share/linkat/linkat-servidor/configurador/server.yml
 7918cf362d4137caec3d1b29b69a6ed3  usr/share/linkat/linkat-servidor/configurador/smb.yml
 96b435d8f9ff11b4815d6834949e8187  usr/share/linkat/linkat-servidor/configurador/vars/main.yml
@@ -81,7 +81,7 @@ eb3b383e89ac3538482a3dac40ed1b9c  usr/share/linkat/linkat-servidor/plantilles/sm
 168b5bf29cd924aaaed7f15dd1a51b61  usr/share/linkat/linkat-servidor/plantilles/smbldap_bind.conf
 60113df405695fc6261f273c91852478  usr/share/linkat/linkat-servidor/plantilles/treball.conf
 df7beedfd6f80e4a56826116e0eb18f6  usr/share/linkat/linkat-servidor/plantilles/uid_index.ldif
-5b10ecd67c8eaf0a20a251938d20444f  usr/share/linkat/linkat-servidor/plantilles/webldap-useradminconfig
+69a3c9d7e162bd3d06cb4fa47de0e5b6  usr/share/linkat/linkat-servidor/plantilles/webldap-useradminconfig
 d6762bcfca3426fbe5edb4508646a95a  usr/share/linkat/linkat-servidor/plantilles/webmin.acl
 82c761ac5c3ae05a3e9bf9a589cec673  usr/share/linkat/linkat-servidor/plantilles/websambaconfig
 7d68a331f0ab71b5d6cf379da9ea309e  usr/share/pixmaps/linkat-servidor.png
