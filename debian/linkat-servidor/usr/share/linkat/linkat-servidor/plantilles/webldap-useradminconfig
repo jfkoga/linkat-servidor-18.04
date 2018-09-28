@@ -69,4 +69,4 @@ home_style=
 group_filter=
 samba_domain=
 random_password=
-ldap_host=
+ldap_host=ldap://127.0.0.1

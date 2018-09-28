@@ -1,5 +1,4 @@
 ## Nextcloud
-
 sudo snap install nextcloud
 nextcloud.manual-install lnadmin __PASSLNADMIN__
 sudo nextcloud.enable-https self-signed

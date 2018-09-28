@@ -5,7 +5,6 @@ CONF_FILE=/etc/linkat/linkat-servidor/linkat-servidor.conf
 PLANTILLES=/usr/share/linkat/linkat-servidor/plantilles
 FILES_LINKAT=/usr/share/linkat/linkat-servidor/configurador/files
 ANSIBLEPLAY=/usr/share/linkat/linkat-servidor/configurador
-LOGS=/var/log/linkat-servidor.log
 DATE=`date '+%Y-%m-%d_%H:%M:%S'`
 
 if [ -f "$CONF_FILE" ]; then
@@ -110,15 +109,6 @@ NEW_PASSLNADMIN1=$(echo "$res" | awk -F"|" '{print $11}')
 NEW_PASSLNADMIN2=$(echo "$res" | awk -F"|" '{print $12}')
 }
 
-check_errors()
-{
-if [ ! "$?" -eq 0 ]; then
-	echo -en "Error: $1"
-	yad --title="Error" --text="\nS'ha produit un error durant la instal·lacio de: $1.\nEl programa es tancara." --image="dialog-error" --button="D'acord"
-	exit 22
-fi
-}
-
 validar_formulari()
 {
 yad --width=400 --title="Linkat Servidor de centre" --text="\nLes dades següents són correctes?\n\nServidor: $NEW_NAME\nDomini: $NEW_DOMAIN\nDispositiu: $NEW_DEV\nIP: $NEW_IP\nMàscara: $NEW_MASK\nPassarel·la: $NEW_GW\nDNS Primària: $NEW_DNS1\nDNS Secundària: $NEW_DNS2" \
@@ -191,8 +181,6 @@ sed -i s/__IP2__/"$IP2"/g *
 sed -i s/__IP3__/"$IP3"/g *
 sed -i s/__IP4__/"$IP4"/g *
 
-echo "$DATE" >> "$LOGS"
-
 ## Nou passwd de l'usuari lnadmin i root
 echo "lnadmin:$NEW_PASSLNADMIN1" | chpasswd
 
@@ -202,7 +190,7 @@ echo -en "Aplicant configuracions...\n\n"
 killall update-manager update-notifier 2>&1
 
 ## Aplica nova configuració de xarxa
-cp -av "$FILES_LINKAT"/50-linkat-net-config.yaml /etc/netplan/ > /dev/null 2>&1
+cp -av "$FILES_LINKAT"/50-linkat-net-config.yaml /etc/netplan/
 netplan apply
 
 ## Repara el fitxer resolv.conf
@@ -218,33 +206,18 @@ systemctl restart bind9.service
 ## Revisa connexió
 check_connexio
 
-killall update-manager update-notifier > /dev/null 2>&1
-dpkg -s slapd > /dev/null 2>&1
-res="$?"
-if [ "$res" -eq 0 ]; then
-	sudo apt purge slapd ldap-auth-config auth-client-config -y
-fi
-
-## Aplicant Playbook LDAP
 ansible-playbook "$ANSIBLEPLAY"/ldap.yml
-
-## Aplicant Playbook servidor (webmin, lnadmin, etc)
 ansible-playbook "$ANSIBLEPLAY"/server.yml
 
 ## Configurant servidor LDAP
 cd "$FILES_LINKAT"/
-sudo "$FILES_LINKAT"/ldap.sh 
-check_errors ldap
-
+sudo "$FILES_LINKAT"/ldap.sh
 sudo "$FILES_LINKAT"/ldap-auth.sh
-check_errors ldap-auth
 
 ## Configuració servidor SAMBA
 ansible-playbook "$ANSIBLEPLAY"/smb.yml
-sudo "$FILES_LINKAT"/ldap-samba.sh 
-check_errors ldap-samba
-sudo "$FILES_LINKAT"/smbldap-populate.sh 
-check_errors populate
+sudo "$FILES_LINKAT"/ldap-samba.sh
+sudo "$FILES_LINKAT"/smbldap-populate.sh
 
 ## Aplicant Playbook permisos i ACLs unitats
 ansible-playbook "$ANSIBLEPLAY"/permisos.yml
@@ -260,9 +233,6 @@ sudo "$FILES_LINKAT"/nextcloud.sh
 #"$FILES_LINKAT"/onlyoffice.sh
 #ansible-playbook "$ANSIBLEPLAY"/onlyoffice.yml
 #chattr +i /etc/nginx/conf.d/onlyoffice-documentserver.conf
-
-# Flag d'instal·lació
-echo servidor > /etc/modalitat_linkat
 
 yad --width=300 --title="Linkat Servidor de centre" --text="\nLa configuració ha estat aplicada.\n\nEl Servidor de centre s'ha de reiniciar per aplicar els canvis.\n\nVoleu reiniciar-lo ara?" \
 --image="/usr/share/linkat/linkat-servidor/linkat-servidor-banner.png" \
