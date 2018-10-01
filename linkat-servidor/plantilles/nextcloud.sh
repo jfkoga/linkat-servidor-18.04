@@ -1,7 +1,11 @@
 ## Nextcloud
 
 sudo snap install nextcloud
-nextcloud.manual-install lnadmin __PASSLNADMIN__
+if [ -f /etc/modalitat_linkat ]; then
+	/usr/share/linkat/linkat-servidor/configurador/files/nextcloud-resetpass.sh
+else
+	nextcloud.manual-install lnadmin __PASSLNADMIN__
+fi
 sudo nextcloud.enable-https self-signed
 sudo snap set nextcloud ports.http=81
 sudo snap set nextcloud ports.https=10443

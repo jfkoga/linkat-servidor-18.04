@@ -66,6 +66,13 @@ check_pass()
                 yad --title="Error" --text="\nLa contrasenya de l'usuari $1 és buida." --image="dialog-error" --button="D'acord"
         	ERROR="1"
 	fi
+	
+	for passnum in "$2"; do
+		if [ ${#passnum} -lt 8 ]; then
+			yad --title="Error" --text="\nLa contrasenya de l'usuari $1 ha de contenir almenys 8 caràcters." --image="dialog-error" --button="D'acord"
+                	ERROR="1"
+		fi
+	done
 }
 
 ## Formulari de dades de configuracions del servidor de centre
