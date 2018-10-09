@@ -211,7 +211,7 @@ killall update-manager update-notifier 2>&1
 ## Eliminar Network-Manager
 dpkg -s network-manager-gnome > /dev/null 2>&1
 if [ "$?" -eq 0 ]; then
-	sudo apt purge network-manager-gnome network-manager
+	sudo apt purge network-manager-gnome network-manager -y
 fi
 
 ## Aplica nova configuració de xarxa
@@ -267,12 +267,11 @@ ansible-playbook "$ANSIBLEPLAY"/acl.yml
 sudo "$FILES_LINKAT"/nextcloud.sh
 
 ## Onlyoffice
-#if [ -f /etc/nginx/conf.d/onlyoffice-documentserver.conf ]; then
-#	sudo chattr -i /etc/nginx/conf.d/onlyoffice-documentserver.conf
-#fi
-#"$FILES_LINKAT"/onlyoffice.sh
-#ansible-playbook "$ANSIBLEPLAY"/onlyoffice.yml
-#chattr +i /etc/nginx/conf.d/onlyoffice-documentserver.conf
+if [ -f /etc/modalitat_linkat ]; then
+	sudo docker stop $(docker ps -a -q)
+	sudo docker rm $(docker ps -a -q)
+fi
+sudo "$FILES_LINKAT"/onlyoffice.sh
 
 # Flag d'instal·lació
 echo servidor > /etc/modalitat_linkat
