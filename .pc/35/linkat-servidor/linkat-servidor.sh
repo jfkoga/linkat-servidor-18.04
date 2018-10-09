@@ -268,8 +268,8 @@ sudo "$FILES_LINKAT"/nextcloud.sh
 
 ## Onlyoffice
 if [ -f /etc/modalitat_linkat ]; then
-	sudo docker stop $(sudo docker ps -a -q)
-	sudo docker rm $(sudo docker ps -a -q)
+	sudo docker stop $(docker ps -a -q)
+	sudo docker rm $(docker ps -a -q)
 fi
 sudo "$FILES_LINKAT"/onlyoffice.sh
 

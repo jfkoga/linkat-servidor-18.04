@@ -9,7 +9,6 @@ sudo docker pull onlyoffice/documentserver
 sudo docker run -itd -p 0.0.0.0:8443:443 --restart=always \
     -v /srv/app/onlyoffice/DocumentServer/cache:/var/lib/onlyoffice/documentserver/App_Data/cache/files  \
     -v /srv/app/onlyoffice/DocumentServer/logs:/var/log/onlyoffice  \
-#    -v /srv/app/onlyoffice/DocumentServer/config:/etc/onlyoffice/documentserver
     -v /srv/app/onlyoffice/DocumentServer/data:/var/www/onlyoffice/Data onlyoffice/documentserver
 
 sudo nextcloud.occ app:install onlyoffice
