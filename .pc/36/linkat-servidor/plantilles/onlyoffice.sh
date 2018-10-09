@@ -1,10 +1,5 @@
 #!/bin/bash
 
-if [ -f /etc/modalitat_linkat ]; then
-        sudo docker stop $(sudo docker ps -a -q)
-        sudo docker rm $(sudo docker ps -a -q)
-fi
-
 sudo mkdir -p /srv/app/onlyoffice/DocumentServer/data/certs
 
 sudo openssl req -x509 -nodes -days 36500 -newkey rsa:2048 -keyout /srv/app/onlyoffice/DocumentServer/data/certs/onlyoffice.key -out /srv/app/onlyoffice/DocumentServer/data/certs/onlyoffice.crt -subj "/C=ES/ST=Catalunya/L=Barcelona/O=Generalitat de Catalunya/OU=Departament Ensenyament/CN=xtec.cat"
