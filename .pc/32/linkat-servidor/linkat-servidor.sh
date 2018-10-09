@@ -208,12 +208,6 @@ echo -en "Aplicant configuracions...\n\n"
 
 killall update-manager update-notifier 2>&1
 
-## Eliminar Network-Manager
-dpkg -s network-manager-gnome > /dev/null 2>&1
-if [ "$?" -eq 0 ]; then
-	sudo apt purge network-manager-gnome network-manager
-fi
-
 ## Aplica nova configuració de xarxa
 cp -av "$FILES_LINKAT"/50-linkat-net-config.yaml /etc/netplan/ > /dev/null 2>&1
 netplan apply
