@@ -1,0 +1,6 @@
+---
+- name: Copiant configuració de ClamAV
+  copy: src=files/linkat-clamdscan dest=/etc/cron.daily/
+
+- name: Copiant configuració de ClamAV
+  copy: src=files/erase_trash dest=/etc/cron.weekly/

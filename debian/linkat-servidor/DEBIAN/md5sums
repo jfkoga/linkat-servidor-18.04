@@ -1,6 +1,6 @@
 9302c769a67467a82260adbc5ebaaadc  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-23bda058493105b34866096a7fa192f2  usr/share/doc/linkat-servidor/changelog.Debian.gz
+7d7f45ce663e4d24842aab934c52b9c1  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 12bf97bdc06bc7d94c9d2b0f95866dbc  usr/share/linkat/linkat-servidor/configurador/acl.yml
 c6742688cadae7ff2b228990a9fa5e64  usr/share/linkat/linkat-servidor/configurador/clamav.yml
@@ -38,8 +38,8 @@ b7f80f9174b5ccbe0bf802c92949c4a2  usr/share/linkat/linkat-servidor/plantilles/ca
 1ee2a8c27544f8186e780fed9096aa4b  usr/share/linkat/linkat-servidor/plantilles/config
 88a42e800494e661eeb6a9f455a5525c  usr/share/linkat/linkat-servidor/plantilles/corba.ldif
 e70fda06c5093ccb45a2078df396a796  usr/share/linkat/linkat-servidor/plantilles/create-home-ldap-users
-f831d5495c116a187f01771b9e575c3b  usr/share/linkat/linkat-servidor/plantilles/debconf.auth-client-config
-f831d5495c116a187f01771b9e575c3b  usr/share/linkat/linkat-servidor/plantilles/debconf.ldap-auth-config
+5b0f51335cfed71db937b9ca6c4b3837  usr/share/linkat/linkat-servidor/plantilles/debconf.auth-client-config
+5b0f51335cfed71db937b9ca6c4b3837  usr/share/linkat/linkat-servidor/plantilles/debconf.ldap-auth-config
 b405b1de60e4afc6705d78de001fb665  usr/share/linkat/linkat-servidor/plantilles/debconf.onlyoffice-documentserver
 1deb0d8e9e95f7985608b36fa75a065f  usr/share/linkat/linkat-servidor/plantilles/debconf.slapd
 aa2d4e3fa3571a799e8bdf958c538deb  usr/share/linkat/linkat-servidor/plantilles/erase_trash
@@ -55,7 +55,7 @@ ca784508bac07fc2b31297c7c7a269fd  usr/share/linkat/linkat-servidor/plantilles/ex
 e510cfa03c5c9753492475c16d6cd85d  usr/share/linkat/linkat-servidor/plantilles/jclicreports.war
 a545f377570e52e46667e9139d760c1e  usr/share/linkat/linkat-servidor/plantilles/ldap-auth.sh
 e6f9f9e9b9994fd1453fe2db720bbe83  usr/share/linkat/linkat-servidor/plantilles/ldap-samba.sh
-12d24dfcb908581d422da39842d50725  usr/share/linkat/linkat-servidor/plantilles/ldap.conf
+1774097a1d76f9aa0f0f914b779fab86  usr/share/linkat/linkat-servidor/plantilles/ldap.conf
 69124a2c1a74c7d0a5aa8baedb99b0de  usr/share/linkat/linkat-servidor/plantilles/ldap.sh
 7765eeac51e4f7a7cef2b102ab0ab396  usr/share/linkat/linkat-servidor/plantilles/ldapconfig.ldif
 f30cc2a38295aa002cd3b8090eb9b629  usr/share/linkat/linkat-servidor/plantilles/ldapscripts.conf
