@@ -99,6 +99,6 @@
   file:
         path: /var/quarantine
         state: directory
-        owner: root
+        owner: clamav
         group: root
         mode: 0770
