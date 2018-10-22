@@ -8,5 +8,5 @@ ldap-auth-config        ldap-auth-config/binddn string  cn=proxyuser,dc=example,
 ldap-auth-config        ldap-auth-config/ldapns/base-dn string  dc=__DOMAIN__
 ldap-auth-config        ldap-auth-config/dblogin        boolean false
 ldap-auth-config        ldap-auth-config/ldapns/ldap_version    select  3
-ldap-auth-config        ldap-auth-config/ldapns/ldap-server     string  ldap:///__NAME__.__DOMAIN__
+ldap-auth-config        ldap-auth-config/ldapns/ldap-server     string  ldap:///127.0.0.1
 ldap-auth-config        ldap-auth-config/rootbinddn     string  cn=admin,dc=__DOMAIN__
