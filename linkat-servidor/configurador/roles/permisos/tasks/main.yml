@@ -111,7 +111,7 @@
         state: directory
         owner: root
         group: Professorat
-        mode: 6775
+        mode: 06775
 
 - name: Verificant unitat cloudprint
   file:
@@ -119,7 +119,7 @@
         state: directory
         owner: root
         group: Professorat
-        mode: 6770
+        mode: 06770
 
 - name: Verificant unitats maquetes
   file:
@@ -127,7 +127,7 @@
         state: directory
         owner: root
         group: Administradors
-        mode: 6770
+        mode: 06770
 
 - name: Verificant unitat Paperera rebost
   file:
@@ -135,7 +135,7 @@
         state: directory
         owner: root
         group: Professorat
-        mode: 6775
+        mode: 06775
 
 - name: Verificant unitat Paperera cloudprint
   file:
@@ -143,7 +143,7 @@
         state: directory
         owner: root
         group: Professorat
-        mode: 6770
+        mode: 06770
 
 - name: Verificant unitats Paperera maquetes
   file:
@@ -151,4 +151,4 @@
         state: directory
         owner: root
         group: Administradors
-        mode: 6770
+        mode: 06770

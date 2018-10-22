@@ -39,11 +39,11 @@ login=
 imap_pass=
 default_warn=
 pre_command=
-group_base=
+group_base=ou=Groups,dc=intracentre
 post_command=
 other_class=
 base_uid=
-user_base=
+user_base=ou=People,dc=intracentre
 passwd_stars=
 home_base=
 mod_props=
