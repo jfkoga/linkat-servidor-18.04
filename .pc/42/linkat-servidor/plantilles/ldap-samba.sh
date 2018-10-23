@@ -23,6 +23,6 @@ check
 sudo auth-client-config -t nss -p lac_ldap
 check
 
-LOCALSID=$(sudo net getlocalsid | awk ' {print $6} ')
-sed -i s/__LOCALSID__/"$LOCALSID"/g /etc/webmin/ldap-useradmin/config
+#LOCALSID=$(sudo net getlocalsid | awk ' {print $6} ')
+#sed -i s/__GETLOCALSID__/"$LOCALSID"/g /etc/smbldap-tools/smbldap.conf
 
