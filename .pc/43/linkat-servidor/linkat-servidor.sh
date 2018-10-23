@@ -208,6 +208,12 @@ echo -en "Aplicant configuracions...\n\n"
 
 killall update-manager update-notifier 2>&1
 
+## Eliminar Network-Manager
+dpkg -s network-manager-gnome > /dev/null 2>&1
+if [ "$?" -eq 0 ]; then
+	sudo apt purge network-manager-gnome network-manager -y
+fi
+
 ## Aplica nova configuració de xarxa
 cp -av "$FILES_LINKAT"/50-linkat-net-config.yaml /etc/netplan/ > /dev/null 2>&1
 netplan apply
@@ -262,13 +268,6 @@ sudo "$FILES_LINKAT"/nextcloud.sh
 
 ## Onlyoffice
 sudo "$FILES_LINKAT"/onlyoffice.sh
-
-## Eliminar Network-Manager
-killall update-manager update-notifier 2>&1
-dpkg -s network-manager-gnome > /dev/null 2>&1
-if [ "$?" -eq 0 ]; then
-       sudo apt purge network-manager-gnome network-manager -y
-fi
 
 # Flag d'instal·lació
 echo servidor > /etc/modalitat_linkat
