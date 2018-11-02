@@ -152,11 +152,3 @@
         owner: root
         group: Administradors
         mode: 06770
-
-- name: Verificant unitat remmount
-  file:
-        path: /etc/remmount.d
-        state: directory
-        owner: lnadmin
-        group: root
-        mode: 00775

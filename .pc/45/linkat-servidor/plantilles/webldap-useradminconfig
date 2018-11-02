@@ -42,7 +42,7 @@ pre_command=
 group_base=ou=Groups,dc=__DOMAIN__
 post_command=
 other_class=inetOrgPerson
-base_uid=2000
+base_uid=
 user_base=ou=People,dc=__DOMAIN__
 passwd_stars=
 home_base=
