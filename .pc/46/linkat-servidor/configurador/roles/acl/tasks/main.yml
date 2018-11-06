@@ -401,33 +401,3 @@
         state: present
         entry: "default:user:minidlna:r-x"
         recursive: yes
-
-- name: Verificant ACL minidlna Exports
-  acl:
-        path: /srv/exports
-        state: present
-        entry: "user:minidlna:r-x"
-        recursive: yes
-
-- name: Verificant ACL minidlna Exports
-  acl:
-        path: /srv/exports
-        state: present
-        entry: "default:user:minidlna:r-x"
-        recursive: yes
-
-
-- name: Verificant ACL lnadmin Exports
-  acl:
-        path: /srv/exports
-        entry: "default:user:lnadmin:rwx"
-        recursive: yes
-        state: present
-
-- name: Verificant ACL lnadmin Exports
-  acl:
-        path: /srv/exports
-        state: present
-        entry: "user:lnadmin:rwx"
-        recursive: yes
-

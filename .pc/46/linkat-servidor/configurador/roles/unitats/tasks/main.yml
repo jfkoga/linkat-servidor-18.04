@@ -103,15 +103,15 @@
         group: root
         mode: 0770
 
-- name: Verificant unitat Arxius
+- name: Verificant unitat rebost
   file:
-        path: /srv/exports/arxius
+        path: /srv/exports/rebost
         state: directory
         owner: root
         group: root
         mode: 6775
 
-- name: Verificant unitat CloudPrint
+- name: Verificant unitat cloudprint
   file:
         path: /srv/exports/cloudprint
         state: directory
@@ -119,7 +119,7 @@
         group: root
         mode: 6770
 
-- name: Verificant unitats Maquetes
+- name: Verificant unitats maquetes
   file:
         path: /srv/exports/maquetes
         state: directory

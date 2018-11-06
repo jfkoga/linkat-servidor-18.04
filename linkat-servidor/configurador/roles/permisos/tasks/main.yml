@@ -105,15 +105,15 @@
         mode: 06770
         recurse: yes
 
-- name: Verificant unitat rebost
+- name: Verificant unitat Arxius
   file:
-        path: /srv/exports/rebost
+        path: /srv/exports/arxius
         state: directory
         owner: root
         group: Professorat
         mode: 06775
 
-- name: Verificant unitat cloudprint
+- name: Verificant unitat CloudPrint
   file:
         path: /srv/exports/cloudprint
         state: directory
@@ -121,7 +121,7 @@
         group: Professorat
         mode: 06770
 
-- name: Verificant unitats maquetes
+- name: Verificant unitats Maquetes
   file:
         path: /srv/exports/maquetes
         state: directory
@@ -129,15 +129,15 @@
         group: Administradors
         mode: 06770
 
-- name: Verificant unitat Paperera rebost
+- name: Verificant unitat Paperera Arxius
   file:
-        path: /srv/exports/Paperera/Paperera_Unitat_rebost
+        path: /srv/exports/Paperera/Paperera_Unitat_arxius
         state: directory
         owner: root
         group: Professorat
         mode: 06775
 
-- name: Verificant unitat Paperera cloudprint
+- name: Verificant unitat Paperera CloudPrint
   file:
         path: /srv/exports/Paperera/Paperera_Unitat_cloudprint
         state: directory
@@ -145,7 +145,7 @@
         group: Professorat
         mode: 06770
 
-- name: Verificant unitats Paperera maquetes
+- name: Verificant unitats Paperera Maquetes
   file:
         path: /srv/exports/Paperera/Paperera_Unitat_maquetes
         state: directory

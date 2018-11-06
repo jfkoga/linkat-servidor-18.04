@@ -20,16 +20,6 @@
 - name: Copiant fitxers de configuració SAMBA smb-ldap
   copy: src=files/smb-ldap.conf dest=/etc/samba/smb.conf.d/
 
-- name: Copiant fitxers de configuració SAMBA arxius
-  copy: src=files/arxius.conf dest=/etc/samba/smb.conf.d/
-
-- name: Copiant fitxers de configuració SAMBA maquetes
-  copy: src=files/maquetes.conf dest=/etc/samba/smb.conf.d/
-
-- name: Copiant fitxers de configuració SAMBA cloudprint
-  copy: src=files/cloudprint.conf dest=/etc/samba/smb.conf.d/
-
-
 - name: Copiant fitxers de configuració SAMBA paperera
   copy: src=files/paperera_xarxa.conf dest=/etc/samba/smb.conf.d/
   

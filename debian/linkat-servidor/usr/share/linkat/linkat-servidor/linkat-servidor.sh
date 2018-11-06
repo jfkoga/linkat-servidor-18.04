@@ -261,7 +261,7 @@ ansible-playbook "$ANSIBLEPLAY"/acl.yml
 sudo "$FILES_LINKAT"/nextcloud.sh
 
 ## Onlyoffice
-sudo "$FILES_LINKAT"/onlyoffice.sh
+#sudo "$FILES_LINKAT"/onlyoffice.sh
 
 ## Eliminar Network-Manager
 killall update-manager update-notifier 2>&1
