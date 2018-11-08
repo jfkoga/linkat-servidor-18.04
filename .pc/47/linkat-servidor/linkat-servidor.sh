@@ -264,9 +264,11 @@ sudo "$FILES_LINKAT"/nextcloud.sh
 #sudo "$FILES_LINKAT"/onlyoffice.sh
 
 ## Eliminar Network-Manager
-sudo systemctl stop NetworkManager.service
-sudo systemctl disable NetworkManager.service
-mv /lib/systemd/system/NetworkManager.service NetworkManager.service.ori
+killall update-manager update-notifier 2>&1
+dpkg -s network-manager-gnome > /dev/null 2>&1
+if [ "$?" -eq 0 ]; then
+       sudo apt purge network-manager-gnome network-manager -y
+fi
 
 # Flag d'instal·lació
 echo servidor > /etc/modalitat_linkat
