@@ -36,11 +36,11 @@
 - name: Copiant fitxers de configuració LDAP
   copy: src=files/linkat-grups dest=/usr/share/pam-configs/linkat-grups
 
-  #- name: Copiant fitxers de configuració LDAP client
-  #copy: src=files/ldap.conf dest=/etc/ldap.conf
+- name: Copiant fitxers de configuració LDAP client
+  copy: src=files/ldap.conf dest=/etc/ldap.conf
 
-  #- name: Copiant fitxers de configuració LDAP client
-  #copy: src=files/libnss-ldap.conf dest=/etc/libnss-ldap.conf
+- name: Copiant fitxers de configuració LDAP client
+  copy: src=files/libnss-ldap.conf dest=/etc/libnss-ldap.conf
 
 - name: Copiant fitxers de configuració SMBLDAP
   copy: src=files/smbldap.conf dest=/etc/smbldap-tools/smbldap.conf
