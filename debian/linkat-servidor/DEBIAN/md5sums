@@ -1,6 +1,6 @@
 9302c769a67467a82260adbc5ebaaadc  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-0db747e872850fd4ae27b0ae397a2136  usr/share/doc/linkat-servidor/changelog.Debian.gz
+91dffdf0f91857faadf7bc66f2810449  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 12bf97bdc06bc7d94c9d2b0f95866dbc  usr/share/linkat/linkat-servidor/configurador/acl.yml
 c6742688cadae7ff2b228990a9fa5e64  usr/share/linkat/linkat-servidor/configurador/clamav.yml
@@ -20,13 +20,13 @@ decfc0a78c214559ad7f7c4f61b37c4c  usr/share/linkat/linkat-servidor/configurador/
 6927f48cf1ea97774b0960506605bcd7  usr/share/linkat/linkat-servidor/configurador/roles/onlyoffice/tasks/main.yml
 d55b80dbec4b5cbb2e0c73298281663c  usr/share/linkat/linkat-servidor/configurador/roles/permisos/tasks/main.yml
 f54d72181bacbb3752625d561f89133c  usr/share/linkat/linkat-servidor/configurador/roles/smb/tasks/main.yml
-95eadcfa8897a6ef05f009daa5bf95be  usr/share/linkat/linkat-servidor/configurador/roles/unitats/tasks/main.yml
+3e2bc21fc5e7db102c528c4892ecc898  usr/share/linkat/linkat-servidor/configurador/roles/unitats/tasks/main.yml
 537d579b31d18f78edf07978598888de  usr/share/linkat/linkat-servidor/configurador/roles/webmin/tasks/main.yml
 0efd7af034ff055b4e55e0d7a30cc4da  usr/share/linkat/linkat-servidor/configurador/server.yml
 7918cf362d4137caec3d1b29b69a6ed3  usr/share/linkat/linkat-servidor/configurador/smb.yml
 96b435d8f9ff11b4815d6834949e8187  usr/share/linkat/linkat-servidor/configurador/vars/main.yml
 557ffbf48d44e2118b2a7778b1c6c13d  usr/share/linkat/linkat-servidor/linkat-servidor-banner.png
-a39ee7465aa60a98bd4e952db737d13c  usr/share/linkat/linkat-servidor/linkat-servidor.sh
+14fa317ce493ecd14d0fed518b6dc5fc  usr/share/linkat/linkat-servidor/linkat-servidor.sh
 630574b6e931ad3992e7a949d44c28f0  usr/share/linkat/linkat-servidor/plantilles/.edu.xtec.properties
 ab162a284638dbd9560d966228226d4f  usr/share/linkat/linkat-servidor/plantilles/01_create_database.sql
 de7df81e0d14ac18236dd0210dd6c6c7  usr/share/linkat/linkat-servidor/plantilles/02_create_user_grants.sql
@@ -35,6 +35,9 @@ f0563c171aaddcd86fae8132b382a3a3  usr/share/linkat/linkat-servidor/plantilles/03
 7552ab83a00b8480a19de591894f8210  usr/share/linkat/linkat-servidor/plantilles/80-linkat-server-lightdm.conf
 a38851aee8e4efb3eaf37a2b879caa20  usr/share/linkat/linkat-servidor/plantilles/arxius.conf
 b7f80f9174b5ccbe0bf802c92949c4a2  usr/share/linkat/linkat-servidor/plantilles/ca.info
+e9f4deb14a4c54542ab613a190ff930a  usr/share/linkat/linkat-servidor/plantilles/calibre-server.service
+0ecc56c3595339e0baa5ff0b6f7d7186  usr/share/linkat/linkat-servidor/plantilles/calibre-server.sh
+27de146c6c2066350f484a7d82300d8b  usr/share/linkat/linkat-servidor/plantilles/calibre-update
 9cac72a0b30a34200af396a07b9604ca  usr/share/linkat/linkat-servidor/plantilles/certinfo.ldif
 39d45cd792a3d578d2535b1b9d72398a  usr/share/linkat/linkat-servidor/plantilles/clamd.conf
 6088e342f0837114b4499902f3e2a78d  usr/share/linkat/linkat-servidor/plantilles/cloudprint.conf
@@ -45,7 +48,7 @@ e70fda06c5093ccb45a2078df396a796  usr/share/linkat/linkat-servidor/plantilles/cr
 4c47238d2deb09c55816e35acc8eec2f  usr/share/linkat/linkat-servidor/plantilles/debconf.ldap-auth-config
 b405b1de60e4afc6705d78de001fb665  usr/share/linkat/linkat-servidor/plantilles/debconf.onlyoffice-documentserver
 1deb0d8e9e95f7985608b36fa75a065f  usr/share/linkat/linkat-servidor/plantilles/debconf.slapd
-aa2d4e3fa3571a799e8bdf958c538deb  usr/share/linkat/linkat-servidor/plantilles/erase_trash
+fcd939f76e3befc3ac8f9a4885517cbe  usr/share/linkat/linkat-servidor/plantilles/erase_trash
 3fe25b5dca527663e5b22e3b5a4216df  usr/share/linkat/linkat-servidor/plantilles/exports
 9a963d6ab0e620cef5adc265df8186ee  usr/share/linkat/linkat-servidor/plantilles/for.domini
 493705f3432fa06d121c19645242841c  usr/share/linkat/linkat-servidor/plantilles/gestio.conf

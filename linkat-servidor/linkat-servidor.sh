@@ -229,7 +229,7 @@ killall update-manager update-notifier > /dev/null 2>&1
 dpkg -s slapd > /dev/null 2>&1
 res="$?"
 if [ "$res" -eq 0 ]; then
-	sudo apt purge slapd ldap-auth-config auth-client-config -y
+	sudo apt purge slapd ldap-auth-config auth-client-config libnss-ldap libnss-ldapd nss-updatedb nscd nslcd -y
 fi
 
 ## Aplicant Playbook LDAP

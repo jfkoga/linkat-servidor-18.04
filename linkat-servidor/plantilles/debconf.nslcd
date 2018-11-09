@@ -1,0 +1,21 @@
+nslcd	nslcd/ldap-bindpw	password	
+nslcd	nslcd/ldap-starttls	boolean	false
+nslcd	nslcd/ldap-sasl-secprops	string	
+nslcd	nslcd/ldap-cacertfile	string	/etc/ssl/certs/ca-certificates.crt
+nslcd	libraries/restart-without-asking	boolean	false
+nslcd	nslcd/ldap-uris	string	ldap://__IP__
+nslcd	nslcd/ldap-base	string	dc=__DOMAIN__
+nslcd	nslcd/ldap-reqcert	select	
+# Services to restart for nslcd upgrade:
+nslcd	nslcd/restart-services	string	
+# Failure restarting some services for nslcd upgrade
+nslcd	nslcd/restart-failed	error	
+nslcd	nslcd/disable-screensaver	error	
+nslcd	nslcd/xdm-needs-restart	error	
+nslcd	nslcd/ldap-binddn	string	
+nslcd	nslcd/ldap-sasl-authzid	string	
+nslcd	nslcd/ldap-sasl-mech	select	
+nslcd	nslcd/ldap-sasl-realm	string	
+nslcd	nslcd/ldap-sasl-krb5-ccname	string	/var/run/nslcd/nslcd.tkt
+nslcd	nslcd/ldap-sasl-authcid	string	
+nslcd	nslcd/ldap-auth-type	select	none
