@@ -229,7 +229,7 @@ killall update-manager update-notifier > /dev/null 2>&1
 dpkg -s slapd > /dev/null 2>&1
 res="$?"
 if [ "$res" -eq 0 ]; then
-	sudo apt purge slapd ldap-auth-config auth-client-config libnss-ldap libnss-ldapd nss-updatedb nscd nslcd -y
+	sudo apt purge slapd ldap-auth-config auth-client-config -y
 fi
 
 ## Aplicant Playbook LDAP
@@ -263,10 +263,12 @@ sudo "$FILES_LINKAT"/nextcloud.sh
 ## Onlyoffice
 #sudo "$FILES_LINKAT"/onlyoffice.sh
 
-## Eliminar Network-Manager
+## Desctivar NetworkManager
 sudo systemctl stop NetworkManager.service
 sudo systemctl disable NetworkManager.service
-mv /lib/systemd/system/NetworkManager.service NetworkManager.service.ori
+if [ -f /lib/systemd/system/NetworkManager.service ]; then
+	mv /lib/systemd/system/NetworkManager.service /lib/systemd/system/NetworkManager.service.ori
+fi
 
 # Flag d'instal·lació
 echo servidor > /etc/modalitat_linkat

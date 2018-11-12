@@ -137,7 +137,7 @@
         group: Professorat
         mode: 06775
 
-- name: Verificant unitat Paperera CloudPrint
+- name: Verificant unitat Paperera cloudprint
   file:
         path: /srv/exports/Paperera/Paperera_Unitat_cloudprint
         state: directory
@@ -145,7 +145,7 @@
         group: Professorat
         mode: 06770
 
-- name: Verificant unitats Paperera Maquetes
+- name: Verificant unitats Paperera maquetes
   file:
         path: /srv/exports/Paperera/Paperera_Unitat_maquetes
         state: directory
