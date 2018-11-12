@@ -402,6 +402,21 @@
         entry: "default:user:minidlna:r-x"
         recursive: yes
 
+- name: Verificant ACL minidlna Exports
+  acl:
+        path: /srv/exports
+        state: present
+        entry: "user:minidlna:r-x"
+        recursive: yes
+
+- name: Verificant ACL minidlna Exports
+  acl:
+        path: /srv/exports
+        state: present
+        entry: "default:user:minidlna:r-x"
+        recursive: yes
+
+
 - name: Verificant ACL lnadmin Exports
   acl:
         path: /srv/exports
@@ -416,16 +431,3 @@
         entry: "user:lnadmin:rwx"
         recursive: yes
 
-- name: Verificant ACL clamav Exports
-  acl:
-        path: /srv/exports
-        entry: "default:user:clamav:rwx"
-        recursive: yes
-        state: present
-
-- name: Verificant ACL clamav Exports
-  acl:
-        path: /srv/exports
-        state: present
-        entry: "user:clamav:rwx"
-        recursive: yes

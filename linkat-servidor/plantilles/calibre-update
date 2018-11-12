@@ -1,1 +1,0 @@
-xvfb-run calibredb add /srv/exports/arxius/llibres/* --with-library /srv/exports/arxius/

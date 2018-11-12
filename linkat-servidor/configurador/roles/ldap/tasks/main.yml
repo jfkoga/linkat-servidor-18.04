@@ -5,8 +5,8 @@
 - name: Aplicant la configuració del paquet ldap-auth-config
   command: debconf-set-selections /usr/share/linkat/linkat-servidor/configurador/files/debconf.ldap-auth-config
 
-- name: Aplicant la configuració del paquet nslcd
-  command: debconf-set-selections /usr/share/linkat/linkat-servidor/configurador/files/debconf.nslcd
+- name: Aplicant la configuració del paquet auth-client-config
+  command: debconf-set-selections /usr/share/linkat/linkat-servidor/configurador/files/debconf.auth-client-config
 
 - name: Instal·lant els paquets del servidor LDAP
   apt: pkg={{ item }} state=present update_cache=yes
@@ -14,11 +14,6 @@
   - slapd
   - ldap-utils
   - ldap-auth-config
-  - nslcd
-  - nscd
-  - libpam-ldapd
-  - nss-updatedb
-  - libnss-ldap
   - auth-client-config
 
 - name: Copiant fitxers de configuració LDAP
@@ -36,11 +31,11 @@
 - name: Copiant fitxers de configuració LDAP
   copy: src=files/linkat-grups dest=/usr/share/pam-configs/linkat-grups
 
-  #- name: Copiant fitxers de configuració LDAP client
-  #copy: src=files/ldap.conf dest=/etc/ldap.conf
+- name: Copiant fitxers de configuració LDAP client
+  copy: src=files/ldap.conf dest=/etc/ldap.conf
 
-  #- name: Copiant fitxers de configuració LDAP client
-  #copy: src=files/libnss-ldap.conf dest=/etc/libnss-ldap.conf
+- name: Copiant fitxers de configuració LDAP client
+  copy: src=files/libnss-ldap.conf dest=/etc/libnss-ldap.conf
 
 - name: Copiant fitxers de configuració SMBLDAP
   copy: src=files/smbldap.conf dest=/etc/smbldap-tools/smbldap.conf
