@@ -1,6 +1,6 @@
 9302c769a67467a82260adbc5ebaaadc  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-38a9826bf0b2feaf87d7283478d8ac87  usr/share/doc/linkat-servidor/changelog.Debian.gz
+d40f7f2cac098008efbd20853c78fa8b  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 12bf97bdc06bc7d94c9d2b0f95866dbc  usr/share/linkat/linkat-servidor/configurador/acl.yml
 c6742688cadae7ff2b228990a9fa5e64  usr/share/linkat/linkat-servidor/configurador/clamav.yml
@@ -57,7 +57,7 @@ b99c91059de67d995d9059baa3744e4e  usr/share/linkat/linkat-servidor/plantilles/gr
 e510cfa03c5c9753492475c16d6cd85d  usr/share/linkat/linkat-servidor/plantilles/jclicreports.war
 a545f377570e52e46667e9139d760c1e  usr/share/linkat/linkat-servidor/plantilles/ldap-auth.sh
 c94353af1c81da6f8df4802569991eee  usr/share/linkat/linkat-servidor/plantilles/ldap-samba.sh
-12d24dfcb908581d422da39842d50725  usr/share/linkat/linkat-servidor/plantilles/ldap.conf
+6da0fcbecc62f11f51b9fe2a00b76bc6  usr/share/linkat/linkat-servidor/plantilles/ldap.conf
 69124a2c1a74c7d0a5aa8baedb99b0de  usr/share/linkat/linkat-servidor/plantilles/ldap.sh
 7765eeac51e4f7a7cef2b102ab0ab396  usr/share/linkat/linkat-servidor/plantilles/ldapconfig.ldif
 d153296062795127175e1791b0ae2a1c  usr/share/linkat/linkat-servidor/plantilles/ldapscripts.conf
@@ -71,10 +71,11 @@ b2a7e31793c8a340be31b2022e510399  usr/share/linkat/linkat-servidor/plantilles/li
 042cec9801be3306aa01c611eef99bec  usr/share/linkat/linkat-servidor/plantilles/miniserv.users
 b184119561e7f02966741312433f6a2b  usr/share/linkat/linkat-servidor/plantilles/multimedia.conf
 881a8ecd9206f08fe7345077866748d9  usr/share/linkat/linkat-servidor/plantilles/named.conf.local
-4f270430d18c6afb7854df2aee93d489  usr/share/linkat/linkat-servidor/plantilles/named.conf.options
+435b70e3b00da6df2c1e977ce5d6d1a9  usr/share/linkat/linkat-servidor/plantilles/named.conf.options
 d64834053de63e7e17f71b2f432af894  usr/share/linkat/linkat-servidor/plantilles/nextcloud-resetpass.sh
-b85226c92e8fab0a37bd35815f9d3cdf  usr/share/linkat/linkat-servidor/plantilles/nextcloud.sh
+965afb441bd85971672a5a42059aec33  usr/share/linkat/linkat-servidor/plantilles/nextcloud.sh
 ae232919db16c220827003e883dcd5eb  usr/share/linkat/linkat-servidor/plantilles/nfs-kernel-server
+b98fe8751b4be54e69539323e8b586e2  usr/share/linkat/linkat-servidor/plantilles/onlyoffice.sh
 bfe7ade69d4190ddf27edcd703fb47d0  usr/share/linkat/linkat-servidor/plantilles/paperera_xarxa.conf
 8f29aa40dabea92f244135465956036d  usr/share/linkat/linkat-servidor/plantilles/professorat.conf
 3b62fc2fd8cc3d688ecf22abd9c99992  usr/share/linkat/linkat-servidor/plantilles/programari.conf
