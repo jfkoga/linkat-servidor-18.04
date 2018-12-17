@@ -429,3 +429,18 @@
         state: present
         entry: "user:clamav:rwx"
         recursive: yes
+
+- name: Verificant ACL lnadmin App
+  acl:
+        path: /srv/app
+        entry: "default:user:lnadmin:rwx"
+        recursive: yes
+        state: present
+
+- name: Verificant ACL lnadmin App
+  acl:
+        path: /srv/app
+        state: present
+        entry: "user:lnadmin:rwx"
+        recursive: yes
+

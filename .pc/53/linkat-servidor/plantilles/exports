@@ -6,4 +6,4 @@
 /srv/exports/T *(rw,all_squash,sync,no_subtree_check)
 /srv/exports/arxius *(rw,root_squash,sync,no_subtree_check)
 /srv/exports/maquetes *(rw,root_squash,sync,no_subtree_check)
-/srv/exports/cloudprint *(rw,sync,no_subtree_check)
+/srv/exports/cloudprint *(rw,root_squash,sync,no_subtree_check)
