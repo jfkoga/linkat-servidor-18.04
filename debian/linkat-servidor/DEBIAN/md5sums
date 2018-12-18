@@ -1,6 +1,6 @@
 9302c769a67467a82260adbc5ebaaadc  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-8e8179e24aa8b434ea24d3cca6bb16e7  usr/share/doc/linkat-servidor/changelog.Debian.gz
+129aef35c37aeed49534544a7732727f  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 12bf97bdc06bc7d94c9d2b0f95866dbc  usr/share/linkat/linkat-servidor/configurador/acl.yml
 c6742688cadae7ff2b228990a9fa5e64  usr/share/linkat/linkat-servidor/configurador/clamav.yml
@@ -46,7 +46,7 @@ b405b1de60e4afc6705d78de001fb665  usr/share/linkat/linkat-servidor/plantilles/de
 1deb0d8e9e95f7985608b36fa75a065f  usr/share/linkat/linkat-servidor/plantilles/debconf.slapd
 f1a033ca370f9d467218e256a786d6a8  usr/share/linkat/linkat-servidor/plantilles/docker.fogproject.service
 aa2d4e3fa3571a799e8bdf958c538deb  usr/share/linkat/linkat-servidor/plantilles/erase_trash
-3fe25b5dca527663e5b22e3b5a4216df  usr/share/linkat/linkat-servidor/plantilles/exports
+f94a87f43540d8903716133d136f5c73  usr/share/linkat/linkat-servidor/plantilles/exports
 9daff7b05fb43d5f78f8dbb381c15b54  usr/share/linkat/linkat-servidor/plantilles/fog.conf
 9a963d6ab0e620cef5adc265df8186ee  usr/share/linkat/linkat-servidor/plantilles/for.domini
 493705f3432fa06d121c19645242841c  usr/share/linkat/linkat-servidor/plantilles/gestio.conf
