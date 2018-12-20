@@ -1,6 +1,6 @@
 9302c769a67467a82260adbc5ebaaadc  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-129aef35c37aeed49534544a7732727f  usr/share/doc/linkat-servidor/changelog.Debian.gz
+36446c5e4fcf2e2855e370ddc8722e60  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 12bf97bdc06bc7d94c9d2b0f95866dbc  usr/share/linkat/linkat-servidor/configurador/acl.yml
 c6742688cadae7ff2b228990a9fa5e64  usr/share/linkat/linkat-servidor/configurador/clamav.yml
@@ -45,7 +45,7 @@ e70fda06c5093ccb45a2078df396a796  usr/share/linkat/linkat-servidor/plantilles/cr
 b405b1de60e4afc6705d78de001fb665  usr/share/linkat/linkat-servidor/plantilles/debconf.onlyoffice-documentserver
 1deb0d8e9e95f7985608b36fa75a065f  usr/share/linkat/linkat-servidor/plantilles/debconf.slapd
 f1a033ca370f9d467218e256a786d6a8  usr/share/linkat/linkat-servidor/plantilles/docker.fogproject.service
-aa2d4e3fa3571a799e8bdf958c538deb  usr/share/linkat/linkat-servidor/plantilles/erase_trash
+b27c95b3b26464ad258b90edc60d90e7  usr/share/linkat/linkat-servidor/plantilles/erase_trash
 f94a87f43540d8903716133d136f5c73  usr/share/linkat/linkat-servidor/plantilles/exports
 9daff7b05fb43d5f78f8dbb381c15b54  usr/share/linkat/linkat-servidor/plantilles/fog.conf
 9a963d6ab0e620cef5adc265df8186ee  usr/share/linkat/linkat-servidor/plantilles/for.domini
@@ -68,7 +68,7 @@ d153296062795127175e1791b0ae2a1c  usr/share/linkat/linkat-servidor/plantilles/ld
 b2a7e31793c8a340be31b2022e510399  usr/share/linkat/linkat-servidor/plantilles/linkat-clamdscan
 5f5345de79804a66732278e2c8641a5c  usr/share/linkat/linkat-servidor/plantilles/linkat-grups
 15eec465639b17a622e7f19607486dcf  usr/share/linkat/linkat-servidor/plantilles/logging.ldif
-32a1156fa7ca168980753cad428339c6  usr/share/linkat/linkat-servidor/plantilles/maquetes.conf
+f9504ac2af2a5f71d9b00029f3505544  usr/share/linkat/linkat-servidor/plantilles/maquetes.conf
 26303f39da1e5cdd8a97d9a58646e940  usr/share/linkat/linkat-servidor/plantilles/minidlna.conf
 042cec9801be3306aa01c611eef99bec  usr/share/linkat/linkat-servidor/plantilles/miniserv.users
 b184119561e7f02966741312433f6a2b  usr/share/linkat/linkat-servidor/plantilles/multimedia.conf

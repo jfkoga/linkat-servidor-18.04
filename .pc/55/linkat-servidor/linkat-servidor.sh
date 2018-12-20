@@ -260,8 +260,8 @@ ansible-playbook "$ANSIBLEPLAY"/acl.yml
 ## Nextcloud
 sudo "$FILES_LINKAT"/nextcloud.sh
 
-## Copy Jclic Projects
-mv /usr/share/java/JClic/projects /srv/exports/S/jclic
+## Onlyoffice
+#sudo "$FILES_LINKAT"/onlyoffice.sh
 
 ## Desctivar NetworkManager
 sudo systemctl stop NetworkManager.service
