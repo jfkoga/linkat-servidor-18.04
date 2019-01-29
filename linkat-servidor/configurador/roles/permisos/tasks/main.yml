@@ -13,7 +13,7 @@
         state: directory
         owner: root
         group: Professorat 
-        mode: 06770
+        mode: 02770
         recurse: yes
 
 - name: Verificant unitats S
@@ -22,7 +22,7 @@
         state: directory
         owner: root
         group: Administradors
-        mode: 06775
+        mode: 02775
         recurse: yes
 
 - name: Verificant unitats T
@@ -40,7 +40,7 @@
         state: directory
         owner: root
         group: Professorat
-        mode: 06770 
+        mode: 02770 
         recurse: yes
 
 - name: Verificant unitats G
@@ -49,7 +49,7 @@
         state: directory
         owner: root
         group: Gestio
-        mode: 06770
+        mode: 02770
         recurse: yes
 
 - name: Verificant Paperera
@@ -66,7 +66,7 @@
         state: directory
         owner: root
         group: Professorat
-        mode: 06770
+        mode: 02770
         recurse: yes
 
 #- name: Verificant Paperera S
@@ -93,7 +93,7 @@
         state: directory
         owner: root
         group: Professorat
-        mode: 06770
+        mode: 02770
         recurse: yes
 
 - name: Verificant Paperera G
@@ -102,7 +102,7 @@
         state: directory
         owner: root
         group: Gestio
-        mode: 06770
+        mode: 02770
         recurse: yes
 
 - name: Verificant unitat Arxius
@@ -111,7 +111,7 @@
         state: directory
         owner: root
         group: Professorat
-        mode: 06775
+        mode: 02770
 
 - name: Verificant unitat CloudPrint
   file:
@@ -119,7 +119,7 @@
         state: directory
         owner: root
         group: Professorat
-        mode: 06770
+        mode: 02770
 
 - name: Verificant unitats Maquetes
   file:
@@ -127,7 +127,7 @@
         state: directory
         owner: root
         group: Administradors
-        mode: 06770
+        mode: 02770
 
 - name: Verificant unitat Paperera Arxius
   file:
@@ -135,7 +135,7 @@
         state: directory
         owner: root
         group: Professorat
-        mode: 06775
+        mode: 02770
 
 - name: Verificant unitat Paperera cloudprint
   file:
@@ -143,15 +143,15 @@
         state: directory
         owner: root
         group: Professorat
-        mode: 06770
+        mode: 02770
 
-- name: Verificant unitats Paperera maquetes
-  file:
-        path: /srv/exports/Paperera/Paperera_Unitat_maquetes
-        state: directory
-        owner: root
-        group: Administradors
-        mode: 06770
+#- name: Verificant unitats Paperera maquetes
+#  file:
+#path: /srv/exports/Paperera/Paperera_Unitat_maquetes
+#state: directory
+#owner: root
+#group: Administradors
+#mode: 06770
 
 - name: Verificant unitat remmount
   file:
