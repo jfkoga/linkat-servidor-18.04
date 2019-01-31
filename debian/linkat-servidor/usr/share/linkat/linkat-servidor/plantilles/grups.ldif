@@ -23,6 +23,11 @@ cn: Gestio
 gidNumber: 10004
 objectClass: posixGroup
 
+dn: cn=Cloudprint,ou=Groups,dc=__DOMAIN__
+cn: Gestio
+gidNumber: 10005
+objectClass: posixGroup
+
 dn: cn=users,ou=Groups,dc=__DOMAIN__
 cn: users
 gidNumber: 100

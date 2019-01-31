@@ -118,7 +118,7 @@
         path: /srv/exports/cloudprint
         state: directory
         owner: root
-        group: Professorat
+        group: Cloudprint
         mode: 02770
 
 - name: Verificant unitats Maquetes
@@ -137,13 +137,13 @@
         group: Professorat
         mode: 02770
 
-- name: Verificant unitat Paperera cloudprint
-  file:
-        path: /srv/exports/Paperera/Paperera_Unitat_cloudprint
-        state: directory
-        owner: root
-        group: Professorat
-        mode: 02770
+#- name: Verificant unitat Paperera cloudprint
+#  file:
+#        path: /srv/exports/Paperera/Paperera_Unitat_cloudprint
+#        state: directory
+#        owner: root
+#        group: Cloudprint
+#        mode: 02770
 
 #- name: Verificant unitats Paperera maquetes
 #  file:
