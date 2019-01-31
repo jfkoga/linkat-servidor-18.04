@@ -109,7 +109,7 @@
         state: directory
         owner: lnadmin 
         group: root
-        mode: 6775
+        mode: 6770
 
 - name: Verificant unitat CloudPrint
   file:
