@@ -1,6 +1,6 @@
 9302c769a67467a82260adbc5ebaaadc  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-ca16d1dc5010bb8d8d405c60d080c892  usr/share/doc/linkat-servidor/changelog.Debian.gz
+a86b2e0ebd2f9b613a4f7933a26e6c27  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 12bf97bdc06bc7d94c9d2b0f95866dbc  usr/share/linkat/linkat-servidor/configurador/acl.yml
 c6742688cadae7ff2b228990a9fa5e64  usr/share/linkat/linkat-servidor/configurador/clamav.yml
@@ -18,11 +18,12 @@ c62fb688f2c5e032eec4d0367817b2c3  usr/share/linkat/linkat-servidor/configurador/
 8cbabdc3347ebfa6193be467c1552aab  usr/share/linkat/linkat-servidor/configurador/roles/ldap/tasks/main.yml
 682b41586132d900c92e741c2700fcae  usr/share/linkat/linkat-servidor/configurador/roles/net/tasks/main.yml
 63861d083d4ad79fe6d7e9b31a098965  usr/share/linkat/linkat-servidor/configurador/roles/nfs/tasks/main.yml
+a3435655a98bd6c47650bb09573f3f37  usr/share/linkat/linkat-servidor/configurador/roles/nginx/tasks/main.yml
 f16496682797d2438121aa278ab12d2d  usr/share/linkat/linkat-servidor/configurador/roles/permisos/tasks/main.yml
 c47b398ae49aa89a5567a7bc4314fd3d  usr/share/linkat/linkat-servidor/configurador/roles/smb/tasks/main.yml
 404b1c529664ab7d58075eab6910699e  usr/share/linkat/linkat-servidor/configurador/roles/unitats/tasks/main.yml
 537d579b31d18f78edf07978598888de  usr/share/linkat/linkat-servidor/configurador/roles/webmin/tasks/main.yml
-379472e0058189ce59a64f7288d882ad  usr/share/linkat/linkat-servidor/configurador/server.yml
+b474f80d01d6cd474e1302968d646810  usr/share/linkat/linkat-servidor/configurador/server.yml
 7918cf362d4137caec3d1b29b69a6ed3  usr/share/linkat/linkat-servidor/configurador/smb.yml
 96b435d8f9ff11b4815d6834949e8187  usr/share/linkat/linkat-servidor/configurador/vars/main.yml
 557ffbf48d44e2118b2a7778b1c6c13d  usr/share/linkat/linkat-servidor/linkat-servidor-banner.png
@@ -54,6 +55,7 @@ f94a87f43540d8903716133d136f5c73  usr/share/linkat/linkat-servidor/plantilles/ex
 a792a881bfce92d39807a3285f9ad018  usr/share/linkat/linkat-servidor/plantilles/grups.ldif
 2992a9446536fc5d448de4872dc1f9f8  usr/share/linkat/linkat-servidor/plantilles/hostname
 5e47d402d3d2ce88ca36b6a969b208f6  usr/share/linkat/linkat-servidor/plantilles/hosts
+fc3700a706dc64af660d0ebe59cd9671  usr/share/linkat/linkat-servidor/plantilles/index.html
 2c858932e1f0700d7a0679d8984bd69e  usr/share/linkat/linkat-servidor/plantilles/jclic.cfg
 3b5a9aaf8499a7af451d2527438fb0f2  usr/share/linkat/linkat-servidor/plantilles/jclicReports.properties
 66f95cd50413a952b3d06f5efe0eabf1  usr/share/linkat/linkat-servidor/plantilles/jclic_test_mysql.sql
@@ -100,3 +102,10 @@ f3391c1856a151f918983851d39158e1  usr/share/linkat/linkat-servidor/plantilles/we
 98e12a50618e352139acc2616fe0ccfd  usr/share/linkat/linkat-servidor/plantilles/webmin.acl
 82c761ac5c3ae05a3e9bf9a589cec673  usr/share/linkat/linkat-servidor/plantilles/websambaconfig
 7d68a331f0ab71b5d6cf379da9ea309e  usr/share/pixmaps/linkat-servidor.png
+d7cdf5dd7d49e7e1eac537000f940882  var/www/html/web/calibre-logo.svg
+2e8672db33cd9b0989f1c31bebc1e6fe  var/www/html/web/fog-logo.svg
+013775cd8061bf20e10f99ed890dff83  var/www/html/web/jclic-logo.svg
+9c8c27333f79a9014d246c36ebdf7afe  var/www/html/web/nextcloud-logo.svg
+9ab1bc051540f0ab8c0f84c9f23d6ac3  var/www/html/web/onlyoffice-logo.svg
+ad01dc1796ea3b42f71ed0b0b3c90508  var/www/html/web/template.svg
+9a18f9bbfdb49346381ad3b10ef20f88  var/www/html/web/webmin-logo.svg
