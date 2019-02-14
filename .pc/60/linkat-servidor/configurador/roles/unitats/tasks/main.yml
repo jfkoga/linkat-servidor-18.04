@@ -127,10 +127,3 @@
         group: root
         mode: 6770
 
-- name: Verificant unitats Maquetes
-  file:
-        path: /srv/exports/maquetes/fog
-        state: directory
-        owner: root
-        group: root
-        mode: 06777

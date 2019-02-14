@@ -1,9 +1,0 @@
----
-- name: Copiant fitxers de configuració FOG 
-  copy: src=files/fog.conf dest=/etc/linkat/docker/dnsmasq/fog.conf
-
-- file:
-        path: /etc/linkat/docker/dnsmasq/fog.conf
-        owner: root
-        group: root
-        mode: 0644

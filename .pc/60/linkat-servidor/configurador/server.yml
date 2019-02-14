@@ -12,6 +12,6 @@
     - dlna
     - webmin
     - clamav
-    - docker
+    - fog
     - jclic
     - nginx
