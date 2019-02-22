@@ -8,7 +8,7 @@ TimeoutStartSec=0
 #Restart=always
 ExecStartPre=-/usr/bin/docker stop fogproject
 ExecStartPre=-/usr/bin/docker rm fogproject 
-ExecStartPre=/usr/bin/docker pull linkat/fogproject:0.0.1
+ExecStartPre=/usr/bin/docker pull linkat/fogproject:1.0.1
 ExecStart=/usr/bin/docker run -d --restart=always -e IP=__IP__ -p 82:82 -p 69:69/tcp -p 69:69/udp -p 21:21 -p 9000:9000 -v "/srv/exports/maquetes/fog":"/images" -v "/srv/app/fogproject/mysql":"/var/lib/mysql" -e WEBSERVER_HTTP_PORT=82 --name fogproject linkat/fogproject:1.0.1
  
 [Install]
