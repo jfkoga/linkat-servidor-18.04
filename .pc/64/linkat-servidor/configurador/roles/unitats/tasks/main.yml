@@ -127,18 +127,10 @@
         group: root
         mode: 6770
 
-- name: Verificant unitats FOG 
+- name: Verificant unitats Maquetes
   file:
-        path: /images
+        path: /srv/exports/maquetes/fog
         state: directory
-        owner: 1000
-        group: 1000
-        mode: 00755
-
-- name: Verificant unitats FOG
-  file:
-        path: /images/dev
-        state: directory
-        owner: 1000
-        group: 1000
-        mode: 00755
+        owner: root
+        group: root
+        mode: 06777

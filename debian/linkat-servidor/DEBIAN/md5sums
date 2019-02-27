@@ -1,6 +1,6 @@
 9302c769a67467a82260adbc5ebaaadc  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-0974f66fab5538bfcdfc3a384dbd6bc4  usr/share/doc/linkat-servidor/changelog.Debian.gz
+4029890f431f507c892164940d015c4b  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 12bf97bdc06bc7d94c9d2b0f95866dbc  usr/share/linkat/linkat-servidor/configurador/acl.yml
 c6742688cadae7ff2b228990a9fa5e64  usr/share/linkat/linkat-servidor/configurador/clamav.yml
@@ -46,7 +46,7 @@ e70fda06c5093ccb45a2078df396a796  usr/share/linkat/linkat-servidor/plantilles/cr
 4c47238d2deb09c55816e35acc8eec2f  usr/share/linkat/linkat-servidor/plantilles/debconf.ldap-auth-config
 b405b1de60e4afc6705d78de001fb665  usr/share/linkat/linkat-servidor/plantilles/debconf.onlyoffice-documentserver
 1deb0d8e9e95f7985608b36fa75a065f  usr/share/linkat/linkat-servidor/plantilles/debconf.slapd
-4c1fd061da648fc981b8f3651cd0ac72  usr/share/linkat/linkat-servidor/plantilles/docker.dnsmasqfog.service
+84af299ad7d6dfd933c6bee688f2e419  usr/share/linkat/linkat-servidor/plantilles/docker.dnsmasqfog.service
 91f8d37cfa37bbc3b54dc910bea4bfa6  usr/share/linkat/linkat-servidor/plantilles/docker.fogproject.service
 84f289ffc4122e027f82f0e148ad3bf4  usr/share/linkat/linkat-servidor/plantilles/erase_trash
 f94a87f43540d8903716133d136f5c73  usr/share/linkat/linkat-servidor/plantilles/exports
