@@ -133,7 +133,7 @@
         state: directory
         owner: 1000
         group: 1000
-        mode: 00777
+        mode: 00755
 
 - name: Verificant unitats FOG
   file:
@@ -141,4 +141,4 @@
         state: directory
         owner: 1000
         group: 1000
-        mode: 00777
+        mode: 00755
