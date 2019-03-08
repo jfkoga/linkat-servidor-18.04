@@ -132,13 +132,13 @@
         path: /srv/fog/images
         state: directory
         owner: 1000
-        group: 1000
-        mode: 00777
+        group: root 
+        mode: 00770
 
 - name: Verificant unitats FOG
   file:
         path: /srv/fog/images/dev
         state: directory
         owner: 1000
-        group: 1000
-        mode: 00777
+        group: root
+        mode: 00770

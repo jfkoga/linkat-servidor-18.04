@@ -1,6 +1,6 @@
 9302c769a67467a82260adbc5ebaaadc  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-e431bf0b4977f03f5f0f01812cdd229f  usr/share/doc/linkat-servidor/changelog.Debian.gz
+6e0f0ba61108f92f9c015c251de1a8de  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 12bf97bdc06bc7d94c9d2b0f95866dbc  usr/share/linkat/linkat-servidor/configurador/acl.yml
 c6742688cadae7ff2b228990a9fa5e64  usr/share/linkat/linkat-servidor/configurador/clamav.yml
@@ -21,7 +21,7 @@ decfc0a78c214559ad7f7c4f61b37c4c  usr/share/linkat/linkat-servidor/configurador/
 a3435655a98bd6c47650bb09573f3f37  usr/share/linkat/linkat-servidor/configurador/roles/nginx/tasks/main.yml
 f16496682797d2438121aa278ab12d2d  usr/share/linkat/linkat-servidor/configurador/roles/permisos/tasks/main.yml
 c47b398ae49aa89a5567a7bc4314fd3d  usr/share/linkat/linkat-servidor/configurador/roles/smb/tasks/main.yml
-374c3f642376a6321b56ec14a27cda2c  usr/share/linkat/linkat-servidor/configurador/roles/unitats/tasks/main.yml
+a4690445728cc31bdc3bad36fe02173f  usr/share/linkat/linkat-servidor/configurador/roles/unitats/tasks/main.yml
 537d579b31d18f78edf07978598888de  usr/share/linkat/linkat-servidor/configurador/roles/webmin/tasks/main.yml
 35b674f1c7b35fe07eaa025279b53092  usr/share/linkat/linkat-servidor/configurador/server.yml
 7918cf362d4137caec3d1b29b69a6ed3  usr/share/linkat/linkat-servidor/configurador/smb.yml
@@ -47,7 +47,7 @@ e70fda06c5093ccb45a2078df396a796  usr/share/linkat/linkat-servidor/plantilles/cr
 b405b1de60e4afc6705d78de001fb665  usr/share/linkat/linkat-servidor/plantilles/debconf.onlyoffice-documentserver
 1deb0d8e9e95f7985608b36fa75a065f  usr/share/linkat/linkat-servidor/plantilles/debconf.slapd
 84af299ad7d6dfd933c6bee688f2e419  usr/share/linkat/linkat-servidor/plantilles/docker.dnsmasqfog.service
-52e7d18140c1a36b467383ff41e53bf8  usr/share/linkat/linkat-servidor/plantilles/docker.fogproject.service
+61c7b11d8de2b81623636e155da64281  usr/share/linkat/linkat-servidor/plantilles/docker.fogproject.service
 84f289ffc4122e027f82f0e148ad3bf4  usr/share/linkat/linkat-servidor/plantilles/erase_trash
 ac0274a1ddac5e6b6a7d0eb47fd04fb2  usr/share/linkat/linkat-servidor/plantilles/exports
 9daff7b05fb43d5f78f8dbb381c15b54  usr/share/linkat/linkat-servidor/plantilles/fog.conf
