@@ -129,7 +129,7 @@
 
 - name: Verificant unitats FOG 
   file:
-        path: /images
+        path: /srv/fog/images
         state: directory
         owner: 1000
         group: 1000
@@ -137,7 +137,7 @@
 
 - name: Verificant unitats FOG
   file:
-        path: /images/dev
+        path: /srv/fog/images/dev
         state: directory
         owner: 1000
         group: 1000
