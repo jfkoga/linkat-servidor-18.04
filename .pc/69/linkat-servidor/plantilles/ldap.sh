@@ -7,10 +7,10 @@ if  [ ! "$?" -eq 0 ]; then
 fi
 }
 
-ldapadd -x -D cn=admin,dc=__DOMAIN__ -w "__PASSROOT__" -f ldapconfig.ldif
+ldapadd -x -D cn=admin,dc=__DOMAIN__ -w __PASSROOT__ -f ldapconfig.ldif
 check
 
-ldapadd -x -D cn=admin,dc=__DOMAIN__ -w "__PASSROOT__" -f grups.ldif
+ldapadd -x -D cn=admin,dc=__DOMAIN__ -w __PASSROOT__ -f grups.ldif
 check
 
 sudo ldapmodify -Q -Y EXTERNAL -H ldapi:/// -f uid_index.ldif

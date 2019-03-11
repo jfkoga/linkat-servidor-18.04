@@ -14,7 +14,7 @@ check
 sudo ldapmodify -Q -Y EXTERNAL -H ldapi:/// -f samba_indices.ldif
 check
 
-sudo smbpasswd -w "__PASSROOT__"
+sudo smbpasswd -w __PASSROOT__
 check
 
 /usr/share/linkat/linkat-servidor/configurador/files/smbldap-populate.sh
