@@ -1,6 +1,6 @@
 9302c769a67467a82260adbc5ebaaadc  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-6ef97e0e0c979333c1f2090fe9470bdf  usr/share/doc/linkat-servidor/changelog.Debian.gz
+430fea852d98ed26c7c43d4911deeeb6  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 12bf97bdc06bc7d94c9d2b0f95866dbc  usr/share/linkat/linkat-servidor/configurador/acl.yml
 c6742688cadae7ff2b228990a9fa5e64  usr/share/linkat/linkat-servidor/configurador/clamav.yml
@@ -62,9 +62,9 @@ a792a881bfce92d39807a3285f9ad018  usr/share/linkat/linkat-servidor/plantilles/gr
 66f95cd50413a952b3d06f5efe0eabf1  usr/share/linkat/linkat-servidor/plantilles/jclic_test_mysql.sql
 e510cfa03c5c9753492475c16d6cd85d  usr/share/linkat/linkat-servidor/plantilles/jclicreports.war
 a545f377570e52e46667e9139d760c1e  usr/share/linkat/linkat-servidor/plantilles/ldap-auth.sh
-c94353af1c81da6f8df4802569991eee  usr/share/linkat/linkat-servidor/plantilles/ldap-samba.sh
+fe6ada277f0b2e75ae4cc63fc6159722  usr/share/linkat/linkat-servidor/plantilles/ldap-samba.sh
 1a2a4dd7a6c30f466d636a595a2ced87  usr/share/linkat/linkat-servidor/plantilles/ldap.conf
-69124a2c1a74c7d0a5aa8baedb99b0de  usr/share/linkat/linkat-servidor/plantilles/ldap.sh
+ff1683fae1d0292cd4a8a538b5fa2a0f  usr/share/linkat/linkat-servidor/plantilles/ldap.sh
 7765eeac51e4f7a7cef2b102ab0ab396  usr/share/linkat/linkat-servidor/plantilles/ldapconfig.ldif
 d153296062795127175e1791b0ae2a1c  usr/share/linkat/linkat-servidor/plantilles/ldapscripts.conf
 6cc602e759a90a54a6c0a72989fe7084  usr/share/linkat/linkat-servidor/plantilles/ldapscripts.passwd
