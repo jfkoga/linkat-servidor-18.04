@@ -1,13 +1,13 @@
 ---
 - name: Copiant fitxers accés web 
-  copy: src=files/index.html dest=/var/www/html/
+  copy: src=files/index.html dest=/srv/app/servidorweb/
 
 - file:
-        path: /var/www/html/index.html
+        path: /srv/app/servidorweb/index.html
         owner: root
         group: root
         mode: 0644
 
-- name: Activant servei nginx
-  service: name=nginx state=started enabled=yes
-  notify: restart nginx
+#- name: Activant servei nginx
+#  service: name=nginx state=started enabled=yes
+#  notify: restart nginx

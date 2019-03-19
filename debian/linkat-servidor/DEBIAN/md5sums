@@ -1,6 +1,6 @@
 9302c769a67467a82260adbc5ebaaadc  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-430fea852d98ed26c7c43d4911deeeb6  usr/share/doc/linkat-servidor/changelog.Debian.gz
+4c2ab6f0e501176d9c573a78f38a6917  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 12bf97bdc06bc7d94c9d2b0f95866dbc  usr/share/linkat/linkat-servidor/configurador/acl.yml
 c6742688cadae7ff2b228990a9fa5e64  usr/share/linkat/linkat-servidor/configurador/clamav.yml
@@ -47,10 +47,9 @@ e70fda06c5093ccb45a2078df396a796  usr/share/linkat/linkat-servidor/plantilles/cr
 b405b1de60e4afc6705d78de001fb665  usr/share/linkat/linkat-servidor/plantilles/debconf.onlyoffice-documentserver
 1deb0d8e9e95f7985608b36fa75a065f  usr/share/linkat/linkat-servidor/plantilles/debconf.slapd
 84af299ad7d6dfd933c6bee688f2e419  usr/share/linkat/linkat-servidor/plantilles/docker.dnsmasqfog.service
-61c7b11d8de2b81623636e155da64281  usr/share/linkat/linkat-servidor/plantilles/docker.fogproject.service
+98484f3f365b1b6dff61b2f95aefc2ec  usr/share/linkat/linkat-servidor/plantilles/docker.fogproject.service
 84f289ffc4122e027f82f0e148ad3bf4  usr/share/linkat/linkat-servidor/plantilles/erase_trash
 ac0274a1ddac5e6b6a7d0eb47fd04fb2  usr/share/linkat/linkat-servidor/plantilles/exports
-9daff7b05fb43d5f78f8dbb381c15b54  usr/share/linkat/linkat-servidor/plantilles/fog.conf
 9a963d6ab0e620cef5adc265df8186ee  usr/share/linkat/linkat-servidor/plantilles/for.domini
 493705f3432fa06d121c19645242841c  usr/share/linkat/linkat-servidor/plantilles/gestio.conf
 a792a881bfce92d39807a3285f9ad018  usr/share/linkat/linkat-servidor/plantilles/grups.ldif
@@ -96,7 +95,6 @@ b075610b9323c8b782b3c7a4ca17fef3  usr/share/linkat/linkat-servidor/plantilles/sm
 eb3b383e89ac3538482a3dac40ed1b9c  usr/share/linkat/linkat-servidor/plantilles/smbldap-populate.sh
 98a8418a268c6fa6dd5f4a34d46a09fa  usr/share/linkat/linkat-servidor/plantilles/smbldap.conf
 168b5bf29cd924aaaed7f15dd1a51b61  usr/share/linkat/linkat-servidor/plantilles/smbldap_bind.conf
-acdc3f57e7c2e781cc87c8ecd7670697  usr/share/linkat/linkat-servidor/plantilles/tomcat-users.xml
 60113df405695fc6261f273c91852478  usr/share/linkat/linkat-servidor/plantilles/treball.conf
 df7beedfd6f80e4a56826116e0eb18f6  usr/share/linkat/linkat-servidor/plantilles/uid_index.ldif
 f3391c1856a151f918983851d39158e1  usr/share/linkat/linkat-servidor/plantilles/webldap-useradminconfig
