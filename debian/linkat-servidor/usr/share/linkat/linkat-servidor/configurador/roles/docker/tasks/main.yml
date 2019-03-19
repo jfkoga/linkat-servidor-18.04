@@ -20,6 +20,12 @@
         group: root
         mode: 0644
 
+- file:
+        path: /etc/systemd/system/docker.servidorweb.service
+        owner: root
+        group: root
+        mode: 0644
+
         #- file:
         #path: /etc/dnsmasq.d/fog.conf
         #owner: root

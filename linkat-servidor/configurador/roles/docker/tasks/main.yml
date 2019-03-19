@@ -5,6 +5,9 @@
 - name: Copiant fitxers de configuració dnsmasq-fog
   copy: src=files/docker.dnsmasqfog.service dest=/etc/systemd/system/
 
+- name: Copiant fitxers de configuració dnsmasq-fog
+  copy: src=files/docker.servidorweb.service dest=/etc/systemd/system/
+
   #- name: Copiant fitxers de configuració dnsmasq-fog
   #  copy: src=files/fog.conf dest=/etc/dnsmasq.d/
 

@@ -142,3 +142,11 @@
         owner: 1000
         group: root
         mode: 00770
+
+- name: Unitats dades Docker
+  file:
+        path: /srv/app
+        state: directory
+        owner: root
+        group: root
+        mode: 00770
