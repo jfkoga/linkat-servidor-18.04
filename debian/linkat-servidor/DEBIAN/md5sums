@@ -1,6 +1,6 @@
 9302c769a67467a82260adbc5ebaaadc  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-ab43808e3170b951e1dad0fcf71d460b  usr/share/doc/linkat-servidor/changelog.Debian.gz
+f9864bbaffec627ef60f7823fa35fb32  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 12bf97bdc06bc7d94c9d2b0f95866dbc  usr/share/linkat/linkat-servidor/configurador/acl.yml
 c6742688cadae7ff2b228990a9fa5e64  usr/share/linkat/linkat-servidor/configurador/clamav.yml
@@ -12,7 +12,7 @@ cf920d9f35afb75036ab47d67b8e0430  usr/share/linkat/linkat-servidor/configurador/
 715d827668a3e546a808070acf3baf10  usr/share/linkat/linkat-servidor/configurador/roles/clamav/tasks/main.yml
 72b254d9531ef9de7eeeff207ac025da  usr/share/linkat/linkat-servidor/configurador/roles/dlna/tasks/main.yml
 decfc0a78c214559ad7f7c4f61b37c4c  usr/share/linkat/linkat-servidor/configurador/roles/dns/tasks/main.yml
-4b236f0ba1113a5e5908c022b374c435  usr/share/linkat/linkat-servidor/configurador/roles/docker/tasks/main.yml
+75908c4c492940531e8b95c31bc1f4e8  usr/share/linkat/linkat-servidor/configurador/roles/docker/tasks/main.yml
 99cb6f7443d2c0986cde0b35d6ca7f91  usr/share/linkat/linkat-servidor/configurador/roles/hostname/tasks/main.yml
 29102d0672029868a8390b0bb3063166  usr/share/linkat/linkat-servidor/configurador/roles/jclic/tasks/main.yml
 8cbabdc3347ebfa6193be467c1552aab  usr/share/linkat/linkat-servidor/configurador/roles/ldap/tasks/main.yml

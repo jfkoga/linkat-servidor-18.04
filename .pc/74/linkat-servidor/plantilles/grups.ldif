@@ -24,7 +24,7 @@ gidNumber: 10004
 objectClass: posixGroup
 
 dn: cn=Cloudprint,ou=Groups,dc=__DOMAIN__
-cn: Cloudprint 
+cn: Gestio
 gidNumber: 10005
 objectClass: posixGroup
 
