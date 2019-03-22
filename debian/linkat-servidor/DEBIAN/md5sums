@@ -1,6 +1,6 @@
 9302c769a67467a82260adbc5ebaaadc  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-910c3a3b01b1de9f65c84b3fee44f030  usr/share/doc/linkat-servidor/changelog.Debian.gz
+0fa07489b51c622b36dd3238f8a50ca9  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 12bf97bdc06bc7d94c9d2b0f95866dbc  usr/share/linkat/linkat-servidor/configurador/acl.yml
 c6742688cadae7ff2b228990a9fa5e64  usr/share/linkat/linkat-servidor/configurador/clamav.yml
@@ -48,7 +48,7 @@ e70fda06c5093ccb45a2078df396a796  usr/share/linkat/linkat-servidor/plantilles/cr
 b405b1de60e4afc6705d78de001fb665  usr/share/linkat/linkat-servidor/plantilles/debconf.onlyoffice-documentserver
 1deb0d8e9e95f7985608b36fa75a065f  usr/share/linkat/linkat-servidor/plantilles/debconf.slapd
 84af299ad7d6dfd933c6bee688f2e419  usr/share/linkat/linkat-servidor/plantilles/docker.dnsmasqfog.service
-aa89e01f8b4225333ff5a8be238bcfd0  usr/share/linkat/linkat-servidor/plantilles/docker.fogproject.service
+93833ea27b084665d262a4683921491e  usr/share/linkat/linkat-servidor/plantilles/docker.fogproject.service
 56b9e41c30c78aee3537a62e5191741e  usr/share/linkat/linkat-servidor/plantilles/docker.servidorweb.service
 84f289ffc4122e027f82f0e148ad3bf4  usr/share/linkat/linkat-servidor/plantilles/erase_trash
 ac0274a1ddac5e6b6a7d0eb47fd04fb2  usr/share/linkat/linkat-servidor/plantilles/exports
@@ -57,7 +57,7 @@ ac0274a1ddac5e6b6a7d0eb47fd04fb2  usr/share/linkat/linkat-servidor/plantilles/ex
 9d051a5af180fe4d4dc6f03ad65b00d5  usr/share/linkat/linkat-servidor/plantilles/grups.ldif
 2992a9446536fc5d448de4872dc1f9f8  usr/share/linkat/linkat-servidor/plantilles/hostname
 5e47d402d3d2ce88ca36b6a969b208f6  usr/share/linkat/linkat-servidor/plantilles/hosts
-203b40424c2071cfc8caf4832ce847f7  usr/share/linkat/linkat-servidor/plantilles/index.html
+67ae53d89b4379241528b915916269c3  usr/share/linkat/linkat-servidor/plantilles/index.html
 2c858932e1f0700d7a0679d8984bd69e  usr/share/linkat/linkat-servidor/plantilles/jclic.cfg
 3b5a9aaf8499a7af451d2527438fb0f2  usr/share/linkat/linkat-servidor/plantilles/jclicReports.properties
 66f95cd50413a952b3d06f5efe0eabf1  usr/share/linkat/linkat-servidor/plantilles/jclic_test_mysql.sql
