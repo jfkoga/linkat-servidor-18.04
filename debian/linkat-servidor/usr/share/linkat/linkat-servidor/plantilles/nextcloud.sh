@@ -47,11 +47,12 @@ sudo nextcloud.occ config:system:set onlyoffice verify_peer_off --value="true"
 sudo nextcloud.occ config:app:delete onlyoffice settings_error
 # Change default nextcloud storage folder
 if [ ! -f /etc/modalitat_linkat ]; then
-	sudo nap disable nextcloud
+	sudo snap disable nextcloud
 	sudo mkdir -p /srv/app/nextcloud 
 	sudo mv /var/snap/nextcloud/common/nextcloud/data/ /srv/app/nextcloud/
 	sudo mkdir /var/snap/nextcloud/common/nextcloud/data/
 	sudo mount --bind /srv/app/nextcloud/data/ /var/snap/nextcloud/common/nextcloud/data/
+	sudo echo "/srv/app/nextcloud/data/        /var/snap/nextcloud/common/nextcloud/data/      none    bind    0       0" >> /etc/fstab
 	sudo snap enable nextcloud
 fi
 
