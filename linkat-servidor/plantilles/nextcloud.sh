@@ -35,11 +35,25 @@ sudo nextcloud.occ config:app:set user_ldap ldap_tls --value="0"
 sudo nextcloud.occ config:app:set user_ldap ldap_userfilter_objectclass --value="inetOrgPerson\norganizationalPerson\nperson"
 sudo nextcloud.occ config:app:set user_ldap ldap_userlist_filter --value="(|(objectclass=inetOrgPerson)(objectclass=organizationalPerson)(objectclass=person))"
 sudo nextcloud.occ config:app:set user_ldap types --value="authentication"
-sudo snap restart nextcloud
+#sudo snap restart nextcloud
 sudo nextcloud.occ app:install onlyoffice
 sudo nextcloud.occ app:enable onlyoffice
 sudo nextcloud.occ config:app:set onlyoffice DocumentServerUrl --value="https://__IP__:10445/"
+sudo nextcloud.occ config:app:set onlyoffice editFormats --value="{\"csv\":\"false\",\"doc\":\"false\",\"docm\":\"false\",\"docx\":\"true\",\"dotx\":\"false\",\"epub\":\"false\",\"html\":\"false\",\"odp\":\"false\",\"ods\":\"true\",\"odt\":\"true\",\"pdf\":\"false\",\"potm\":\"false\",\"potx\":\"false\",\"ppsm\":\"false\",\"ppsx\":\"false\",\"ppt\":\"false\",\"pptm\":\"false\",\"pptx\":\"true\",\"rtf\":\"false\",\"txt\":\"false\",\"xls\":\"false\",\"xlsm\":\"false\",\"xlsx\":\"true\",\"xltm\":\"false\",\"xltx\":\"false\"}"
+sudo nextcloud.occ config:app:set onlyoffice defFormats --value="{\"csv\":\"false\",\"doc\":\"true\",\"docm\":\"false\",\"docx\":\"true\",\"dotx\":\"false\",\"epub\":\"false\",\"html\":\"false\",\"odp\":\"true\",\"ods\":\"true\",\"odt\":\"true\",\"pdf\":\"true\",\"potm\":\"false\",\"potx\":\"false\",\"ppsm\":\"false\",\"ppsx\":\"false\",\"ppt\":\"true\",\"pptm\":\"false\",\"pptx\":\"true\",\"rtf\":\"false\",\"txt\":\"false\",\"xls\":\"true\",\"xlsm\":\"false\",\"xlsx\":\"true\",\"xltm\":\"false\",\"xltx\":\"false\"}"
 #sudo nextcloud.occ config:app:set --value https:\/\/__IP__:10445\/ onlyoffice DocumentServerUrl
 sudo nextcloud.occ config:system:set onlyoffice verify_peer_off --value="true"
+# Resolve onlyoffice connection error
+sudo nextcloud.occ config:app:delete onlyoffice settings_error
+# Change default nextcloud storage folder
+if [ ! -f /etc/modalitat_linkat ]; then
+	sudo nap disable nextcloud
+	sudo mkdir -p /srv/app/nextcloud 
+	sudo mv /var/snap/nextcloud/common/nextcloud/data/ /srv/app/nextcloud/
+	sudo mkdir /var/snap/nextcloud/common/nextcloud/data/
+	sudo mount --bind /srv/app/nextcloud/data/ /var/snap/nextcloud/common/nextcloud/data/
+	sudo snap enable nextcloud
+fi
+
 sudo snap restart nextcloud
 

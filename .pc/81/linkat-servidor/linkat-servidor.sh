@@ -253,16 +253,15 @@ check_errors ldap-samba
 sudo "$FILES_LINKAT"/smbldap-populate.sh 
 check_errors populate
 
-## Copy Jclic Projects
-mv /usr/share/java/JClic/projects /srv/exports/S/jclic
-chown -R root:Administradors /srv/exports/S/jclic
-
 ## Aplicant Playbook permisos i ACLs unitats
 ansible-playbook "$ANSIBLEPLAY"/permisos.yml
 ansible-playbook "$ANSIBLEPLAY"/acl.yml
 
 ## Nextcloud
 sudo "$FILES_LINKAT"/nextcloud.sh
+
+## Copy Jclic Projects
+mv /usr/share/java/JClic/projects /srv/exports/S/jclic
 
 ## Desctivar NetworkManager
 sudo systemctl stop NetworkManager.service
