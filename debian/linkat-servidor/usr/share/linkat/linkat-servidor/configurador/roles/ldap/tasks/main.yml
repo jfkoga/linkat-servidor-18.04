@@ -35,6 +35,9 @@
   copy: src=files/ldap.conf dest=/etc/ldap.conf
 
 - name: Copiant fitxers de configuració LDAP client
+  copy: src=files/ldap-ldap.conf dest=/etc/ldap/ldap.conf
+
+- name: Copiant fitxers de configuració LDAP client
   copy: src=files/libnss-ldap.conf dest=/etc/libnss-ldap.conf
 
 - name: Copiant fitxers de configuració SMBLDAP
@@ -48,6 +51,15 @@
 
 - name: Copiant fitxers de configuració LDAPSCRIPTS
   copy: src=files/ldapscripts.passwd dest=/etc/ldapscripts/ldapscripts.passwd
+
+- name: Copiant fitxers de configuració APPARMOR
+  copy: src=files/usr.bin.freshclam dest=/etc/apparmor.d/usr.bin.freshclam
+
+- name: Copiant fitxers de configuració APPARMOR
+  copy: src=files/usr.lib.snapd.snap-confine.real dest=/etc/apparmor.d/usr.lib.snapd.snap-confine.real
+
+- name: Copiant fitxers de configuració APPARMOR
+  copy: src=files/usr.sbin.clamd dest=/etc/apparmor.d/usr.sbin.clamd
 
 - file:
         path: /usr/share/lightdm/lightdm.conf.d/80-linkat-server-lightdm.conf
@@ -101,6 +113,17 @@
         owner: root
         group: root
         mode: 0400
+
+- file:
+        path: /etc/ldap/ldap.conf
+        owner: root
+        group: root
+        mode: 0644
+- file:
+        path: /etc/ldap.conf
+        owner: root
+        group: root
+        mode: 0644
 
 - name: Activant servei LDAP
   service: name=slapd state=started enabled=yes
