@@ -1,6 +1,6 @@
 9302c769a67467a82260adbc5ebaaadc  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-2af117c246b7108e1421839caad3698f  usr/share/doc/linkat-servidor/changelog.Debian.gz
+f4aba6f340da97e19c073c4a6c0b8d14  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 12bf97bdc06bc7d94c9d2b0f95866dbc  usr/share/linkat/linkat-servidor/configurador/acl.yml
 c6742688cadae7ff2b228990a9fa5e64  usr/share/linkat/linkat-servidor/configurador/clamav.yml
@@ -75,7 +75,7 @@ b2a7e31793c8a340be31b2022e510399  usr/share/linkat/linkat-servidor/plantilles/li
 5f5345de79804a66732278e2c8641a5c  usr/share/linkat/linkat-servidor/plantilles/linkat-grups
 15eec465639b17a622e7f19607486dcf  usr/share/linkat/linkat-servidor/plantilles/logging.ldif
 f9504ac2af2a5f71d9b00029f3505544  usr/share/linkat/linkat-servidor/plantilles/maquetes.conf
-03b7e182e481052ed39a6fcce16a4ac3  usr/share/linkat/linkat-servidor/plantilles/minidlna.conf
+17ae7d957980a4bdb646f94c9454e6d1  usr/share/linkat/linkat-servidor/plantilles/minidlna.conf
 042cec9801be3306aa01c611eef99bec  usr/share/linkat/linkat-servidor/plantilles/miniserv.users
 b184119561e7f02966741312433f6a2b  usr/share/linkat/linkat-servidor/plantilles/multimedia.conf
 881a8ecd9206f08fe7345077866748d9  usr/share/linkat/linkat-servidor/plantilles/named.conf.local
