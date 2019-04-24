@@ -61,12 +61,6 @@
 - name: Copiant fitxers de configuració APPARMOR
   copy: src=files/usr.sbin.clamd dest=/etc/apparmor.d/usr.sbin.clamd
 
-- name: Copiant fitxers de configuració APPARMOR
-  copy: src=files/usr.sbin.cupsd dest=/etc/apparmor.d/usr.sbin.cupsd
-
-- name: Copiant fitxers de configuració APPARMOR
-  copy: src=files/usr.sbin.ntpd dest=/etc/apparmor.d/usr.sbin.ntpd
-
 - file:
         path: /usr/share/lightdm/lightdm.conf.d/80-linkat-server-lightdm.conf
         owner: root
