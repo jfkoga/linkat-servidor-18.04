@@ -2,11 +2,6 @@
 
 ## Nextcloud
 
-zenity --width="250" --question --title="Reinici Nextcloud" --text="Voleu reiniciar el servei Nextcloud?"
-if [ $? -gt 0 ]; then
-	exit 11
-else
-
 sudo nextcloud.enable-https self-signed
 sudo snap set nextcloud ports.http=81
 sudo snap set nextcloud ports.https=10443
@@ -43,5 +38,3 @@ sudo nextcloud.occ config:system:set onlyoffice verify_peer_off --value="true"
 # Resolve onlyoffice connection error
 sudo nextcloud.occ config:app:delete onlyoffice settings_error
 sudo snap restart nextcloud
-
-fi

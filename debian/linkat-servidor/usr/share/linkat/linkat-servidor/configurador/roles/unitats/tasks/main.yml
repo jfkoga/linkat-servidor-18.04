@@ -5,7 +5,7 @@
         state: directory
         owner: root
         group: root
-        mode: 0555
+        mode: 00555
 
 - name: Verificant unitat P
   file:
@@ -13,7 +13,7 @@
         state: directory
         owner: root
         group: root
-        mode: 6770
+        mode: 06770
 
 - name: Verificant unitats S
   file:
@@ -21,7 +21,7 @@
         state: directory
         owner: root
         group: root
-        mode: 6775
+        mode: 06775
 
 - name: Verificant unitats T
   file:
@@ -29,7 +29,7 @@
         state: directory
         owner: root
         group: root
-        mode: 0777
+        mode: 00777
 
 - name: Verificant unitats M
   file:
@@ -37,7 +37,7 @@
         state: directory
         owner: root
         group: root
-        mode: 6770
+        mode: 06770
 
 - name: Verificant unitats G
   file:
@@ -45,7 +45,7 @@
         state: directory
         owner: root
         group: root
-        mode: 6770
+        mode: 06770
 
 - name: Verificant Paperera
   file:
@@ -53,7 +53,7 @@
         state: directory
         owner: root
         group: root
-        mode: 6775
+        mode: 02775
 
 - name: Verificant Paperera P
   file:
@@ -61,7 +61,7 @@
         state: directory
         owner: root
         group: root
-        mode: 0770
+        mode: 00770
 
 #- name: Verificant Paperera S
 #  file:
@@ -69,7 +69,7 @@
 #        state: directory
 #        owner: root
 #        group: root
-#        mode: 0644
+#        mode: 00644
 
 - name: Verificant Paperera T
   file:
@@ -77,7 +77,7 @@
         state: directory
         owner: root
         group: root
-        mode: 0775
+        mode: 00775
 
 - name: Verificant Paperera M
   file:
@@ -85,7 +85,7 @@
         state: directory
         owner: root
         group: root
-        mode: 0770
+        mode: 00770
 
 - name: Verificant Paperera G
   file:
@@ -93,7 +93,7 @@
         state: directory
         owner: root
         group: root
-        mode: 0770
+        mode: 00770
 
 - name: Verificant Quarantine
   file:
@@ -101,7 +101,7 @@
         state: directory
         owner: clamav
         group: root
-        mode: 0770
+        mode: 00770
 
 - name: Verificant unitat Arxius
   file:
@@ -109,7 +109,7 @@
         state: directory
         owner: lnadmin 
         group: root
-        mode: 6770
+        mode: 06770
 
 - name: Verificant unitat CloudPrint
   file:
@@ -117,7 +117,7 @@
         state: directory
         owner: root
         group: root
-        mode: 6770
+        mode: 06770
 
 - name: Verificant unitats Maquetes
   file:
@@ -125,7 +125,7 @@
         state: directory
         owner: root
         group: root
-        mode: 6770
+        mode: 06770
 
 - name: Verificant unitats FOG 
   file:
