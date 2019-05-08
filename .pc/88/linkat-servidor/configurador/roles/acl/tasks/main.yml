@@ -108,41 +108,6 @@
         recursive: yes
         state: present
 
-- name: Verificant ACL Paperera P
-  acl:
-        path: /srv/exports/Paperera/Paperera_Unitat_P
-        state: present
-        entry: "default:user::rwx"
-        recursive: yes
-
-#- name: Verificant ACL Paperera S
-#  acl:
-#        path: /srv/exports/Paperera/Paperera_Unitat_S
-#        state: present
-#        entry: "default:user::rwx"
-#        recursive: yes
-
-- name: Verificant ACL Paperera T
-  acl:
-        path: /srv/exports/Paperera/Paperera_Unitat_T
-        state: present
-        entry: "default:user::rwx"
-        recursive: yes
-
-- name: Verificant ACL Paperera M
-  acl:
-        path: /srv/exports/Paperera/Paperera_Unitat_M
-        entry: "default:user::rwx"
-        recursive: yes
-        state: present
-
-- name: Verificant ACL Paperera G
-  acl:
-        path: /srv/exports/Paperera/Paperera_Unitat_G
-        entry: "default:user::rwx"
-        recursive: yes
-        state: present
-
 - name: Verificant ACL lnadmin unitat Quarantine
   acl:
         path: /var/quarantine
