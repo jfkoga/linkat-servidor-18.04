@@ -44,4 +44,6 @@ sudo nextcloud.occ config:system:set onlyoffice verify_peer_off --value="true"
 sudo nextcloud.occ config:app:delete onlyoffice settings_error
 sudo snap restart nextcloud
 
+zenity --width="250" --info --title="Reinici Nextcloud" --text="S'ha reiniciat el servei Nextcloud correctament."
+
 fi

@@ -1,6 +1,6 @@
 9302c769a67467a82260adbc5ebaaadc  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-1bedeb6b03d08465c2bcec6752499bf6  usr/share/doc/linkat-servidor/changelog.Debian.gz
+dd9ca8e7f851c0552c11afeee5ee80ee  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 12bf97bdc06bc7d94c9d2b0f95866dbc  usr/share/linkat/linkat-servidor/configurador/acl.yml
 c6742688cadae7ff2b228990a9fa5e64  usr/share/linkat/linkat-servidor/configurador/clamav.yml
@@ -8,7 +8,7 @@ f4ff368d7bacced78229fa16c0475502  usr/share/linkat/linkat-servidor/configurador/
 793b6d8a2dc3579d9536adc94785cc18  usr/share/linkat/linkat-servidor/configurador/hostname.yml
 c0d48f7e5b65248095c47286f5eb6be2  usr/share/linkat/linkat-servidor/configurador/ldap.yml
 cf920d9f35afb75036ab47d67b8e0430  usr/share/linkat/linkat-servidor/configurador/permisos.yml
-5d68e3e1bc576920a503878057bf8761  usr/share/linkat/linkat-servidor/configurador/roles/acl/tasks/main.yml
+840dafa78b2503aee19159a9b6029c0c  usr/share/linkat/linkat-servidor/configurador/roles/acl/tasks/main.yml
 715d827668a3e546a808070acf3baf10  usr/share/linkat/linkat-servidor/configurador/roles/clamav/tasks/main.yml
 72b254d9531ef9de7eeeff207ac025da  usr/share/linkat/linkat-servidor/configurador/roles/dlna/tasks/main.yml
 decfc0a78c214559ad7f7c4f61b37c4c  usr/share/linkat/linkat-servidor/configurador/roles/dns/tasks/main.yml
@@ -81,7 +81,7 @@ b184119561e7f02966741312433f6a2b  usr/share/linkat/linkat-servidor/plantilles/mu
 881a8ecd9206f08fe7345077866748d9  usr/share/linkat/linkat-servidor/plantilles/named.conf.local
 435b70e3b00da6df2c1e977ce5d6d1a9  usr/share/linkat/linkat-servidor/plantilles/named.conf.options
 d64834053de63e7e17f71b2f432af894  usr/share/linkat/linkat-servidor/plantilles/nextcloud-resetpass.sh
-d277df44f14d0ba604ad4afa8c575949  usr/share/linkat/linkat-servidor/plantilles/nextcloud-restart.sh
+610ed0f49925bf97c9b78226fa416393  usr/share/linkat/linkat-servidor/plantilles/nextcloud-restart.sh
 20edf7f6ebd231c460caa0bd5aac8e1d  usr/share/linkat/linkat-servidor/plantilles/nextcloud.sh
 ae232919db16c220827003e883dcd5eb  usr/share/linkat/linkat-servidor/plantilles/nfs-kernel-server
 b98fe8751b4be54e69539323e8b586e2  usr/share/linkat/linkat-servidor/plantilles/onlyoffice.sh
