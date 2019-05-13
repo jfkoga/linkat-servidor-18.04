@@ -5,7 +5,7 @@
         state: directory
         owner: root
         group: root
-        mode: 00555
+        mode: 00775
 
 - name: Verificant unitat P
   file:
