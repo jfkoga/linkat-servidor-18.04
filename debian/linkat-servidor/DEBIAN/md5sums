@@ -1,6 +1,6 @@
-9302c769a67467a82260adbc5ebaaadc  usr/share/applications/linkat-servidor.desktop
+611fee8185e4c355cb20fc62d11d776e  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-0b78f15e8138f8d4d9388824657c1f97  usr/share/doc/linkat-servidor/changelog.Debian.gz
+b067d1c733d9cebfbd7c019fd1a75099  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 12bf97bdc06bc7d94c9d2b0f95866dbc  usr/share/linkat/linkat-servidor/configurador/acl.yml
 c6742688cadae7ff2b228990a9fa5e64  usr/share/linkat/linkat-servidor/configurador/clamav.yml
@@ -28,7 +28,8 @@ fa78a928ac956e97ff0123d0ef9f1925  usr/share/linkat/linkat-servidor/configurador/
 d5adeac74d2a43dd8a15c44cfd377cfa  usr/share/linkat/linkat-servidor/configurador/unitats.yml
 96b435d8f9ff11b4815d6834949e8187  usr/share/linkat/linkat-servidor/configurador/vars/main.yml
 557ffbf48d44e2118b2a7778b1c6c13d  usr/share/linkat/linkat-servidor/linkat-servidor-banner.png
-9f147e5727d600b75c9496edaaa0e9f5  usr/share/linkat/linkat-servidor/linkat-servidor.sh
+7a7a42c589d58d287e2ed131f1702087  usr/share/linkat/linkat-servidor/linkat-servidor.install
+957dc06133aa9e53670c05fdce3e4d1e  usr/share/linkat/linkat-servidor/linkat-servidor.sh
 630574b6e931ad3992e7a949d44c28f0  usr/share/linkat/linkat-servidor/plantilles/.edu.xtec.properties
 ab162a284638dbd9560d966228226d4f  usr/share/linkat/linkat-servidor/plantilles/01_create_database.sql
 de7df81e0d14ac18236dd0210dd6c6c7  usr/share/linkat/linkat-servidor/plantilles/02_create_user_grants.sql

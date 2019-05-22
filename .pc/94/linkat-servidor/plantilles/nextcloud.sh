@@ -4,7 +4,7 @@
 
 sudo snap install nextcloud
 if [ -f /etc/modalitat_linkat ]; then
-        sudo /usr/share/linkat/linkat-servidor/configurador/files/nextcloud-resetpass.sh > /dev/null 2>&1
+        sudo /usr/share/linkat/linkat-servidor/configurador/files/nextcloud-resetpass.sh
 else
         sudo nextcloud.manual-install lnadmin __PASSLNADMIN__
 fi
