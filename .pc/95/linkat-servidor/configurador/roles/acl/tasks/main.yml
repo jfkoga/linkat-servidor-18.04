@@ -73,20 +73,6 @@
         entry: "group:Editors:rwx"
         recursive: yes
 
-- name: Verificant ACL Administradors unitat S
-  acl:
-        path: /srv/exports/S
-        state: present
-        entry: "default:group:Administradors:rwx"
-        recursive: yes
-
-- name: Verificant ACL Administradors unitat S
-  acl:
-        path: /srv/exports/S
-        state: present
-        entry: "group:Administradors:rwx"
-        recursive: yes
-
 - name: Verificant ACL Paperera P
   acl:
         path: /srv/exports/Paperera/Paperera_Unitat_P
@@ -675,16 +661,3 @@
         recursive: yes
         state: present
 
-- name: Verificant ACL clamav unitats Calibre
-  acl:
-        path: /srv/calibre
-        state: present
-        entry: "default:user:clamav:rwx"
-        recursive: yes
-
-- name: Verificant ACL clamav unitats Calibre
-  acl:
-        path: /srv/calibre
-        state: present
-        entry: "user:clamav:rwx"
-        recursive: yes

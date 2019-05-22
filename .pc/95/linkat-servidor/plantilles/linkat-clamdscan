@@ -10,16 +10,13 @@ echo "################################" >> $LOG
 
 date >> $LOG
 
-for FOLDER in /srv/exports /srv/calibre; do
-
 if [ -f $CONTROL ] ; then
-	/usr/bin/nice -n 19 /usr/bin/ionice -c2 -n7 find $FOLDER -type f -cnewer $CONTROL -print0 | xargs -0 -r clamdscan --multiscan --fdpass --infected --log=$LOG --move=/var/quarantine --quiet
+	/usr/bin/nice -n 19 /usr/bin/ionice -c2 -n7 find /srv/exports -type f -cnewer $CONTROL -print0 | xargs -0 -r clamdscan --multiscan --fdpass --infected --log=$LOG --move=/var/quarantine --quiet
 	touch $CONTROL
 else
-	/usr/bin/nice -n 19 /usr/bin/ionice -c2 -n7 find $FOLDER -type f -print0 | xargs -0 -r clamdscan --multiscan --fdpass --infected --log=$LOG --move=/var/quarantine --quiet
+	/usr/bin/nice -n 19 /usr/bin/ionice -c2 -n7 find  /srv/exports -type f -print0 | xargs -0 -r clamdscan --multiscan --fdpass --infected --log=$LOG --move=/var/quarantine --quiet
 	touch $CONTROL
 fi
-done
 
 date >> $LOG
 echo "################################" >> $LOG

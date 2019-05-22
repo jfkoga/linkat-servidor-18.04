@@ -58,7 +58,7 @@
         state: directory
         owner: root
         group: Administradors
-        mode: 02775
+        mode: 06775
 
 - name: Verificant Paperera P
   file:
