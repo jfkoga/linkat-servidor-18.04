@@ -5,6 +5,7 @@ CONF_FILE=/etc/linkat/linkat-servidor/linkat-servidor.conf
 PLANTILLES=/usr/share/linkat/linkat-servidor/plantilles
 FILES_LINKAT=/usr/share/linkat/linkat-servidor/configurador/files
 ANSIBLEPLAY=/usr/share/linkat/linkat-servidor/configurador
+LOGS=/var/log/linkat-servidor.log
 DATE=`date '+%Y-%m-%d_%H:%M:%S'`
 
 if [ -f "$CONF_FILE" ]; then
@@ -197,6 +198,8 @@ sed -i s/__IP2__/"$IP2"/g *
 sed -i s/__IP3__/"$IP3"/g *
 sed -i s/__IP4__/"$IP4"/g *
 
+echo "$DATE" >> "$LOGS"
+
 ## Nou passwd de l'usuari lnadmin i root
 echo "lnadmin:$NEW_PASSLNADMIN1" | chpasswd
 
@@ -237,7 +240,7 @@ ansible-playbook "$ANSIBLEPLAY"/server.yml
 
 ## Configurant servidor LDAP
 cd "$FILES_LINKAT"/
-sudo "$FILES_LINKAT"/ldap.sh
+sudo "$FILES_LINKAT"/ldap.sh 
 check_errors ldap
 
 sudo "$FILES_LINKAT"/ldap-auth.sh
@@ -245,9 +248,9 @@ check_errors ldap-auth
 
 ## Configuració servidor SAMBA
 ansible-playbook "$ANSIBLEPLAY"/smb.yml
-sudo "$FILES_LINKAT"/ldap-samba.sh
+sudo "$FILES_LINKAT"/ldap-samba.sh 
 check_errors ldap-samba
-sudo "$FILES_LINKAT"/smbldap-populate.sh
+sudo "$FILES_LINKAT"/smbldap-populate.sh 
 check_errors populate
 
 ## Copy Jclic Projects
