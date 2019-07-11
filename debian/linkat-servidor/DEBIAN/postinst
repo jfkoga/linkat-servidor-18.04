@@ -1,0 +1,4 @@
+#!/bin/bash
+
+chmod 750 /etc/linkat/linkat-servidor/
+chmod 750 /usr/share/linkat/linkat-servidor/
