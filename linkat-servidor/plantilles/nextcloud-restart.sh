@@ -8,7 +8,8 @@ if [ $? -gt 0 ]; then
 else
 
 # Set Apparmour snap permissions to rw
-sudo sed '/tmp\/snap.*\/ w/ s/w/rw/g' /etc/apparmor.d/usr.lib.snapd.snap-confine.real
+sudo sed -i '/tmp\/snap.*\/ w/ s/w/rw/g' /etc/apparmor.d/usr.lib.snapd.snap-confine.real
+sudo apparmor_parser -r /etc/apparmor.d/usr.lib.snapd.snap-confine.real
 
 # Reconfigure Nextcloud snap
 sudo nextcloud.enable-https self-signed

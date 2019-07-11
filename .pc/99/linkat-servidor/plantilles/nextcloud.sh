@@ -1,9 +1,7 @@
 #!/bin/bash
 
-# Set Apparmor snap permissions to rw
-sed '/tmp\/snap.*\/ w/ s/w/rw/g' /etc/apparmor.d/usr.lib.snapd.snap-confine.real
+## Nextcloud
 
-# Install and Configure Nextcloud via snap
 sudo snap install nextcloud
 if [ -f /etc/modalitat_linkat ]; then
         sudo /usr/share/linkat/linkat-servidor/configurador/files/nextcloud-resetpass.sh > /dev/null 2>&1
@@ -60,3 +58,4 @@ if [ ! -f /etc/modalitat_linkat ]; then
 fi
 
 sudo snap restart nextcloud
+
