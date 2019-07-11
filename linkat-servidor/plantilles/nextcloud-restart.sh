@@ -7,6 +7,10 @@ if [ $? -gt 0 ]; then
 	exit 11
 else
 
+# Set Apparmour snap permissions to rw
+sudo sed '/tmp\/snap.*\/ w/ s/w/rw/g' /etc/apparmor.d/usr.lib.snapd.snap-confine.real
+
+# Reconfigure Nextcloud snap
 sudo nextcloud.enable-https self-signed
 sudo snap set nextcloud ports.http=81
 sudo snap set nextcloud ports.https=10443
