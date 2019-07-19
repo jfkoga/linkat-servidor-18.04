@@ -18,7 +18,6 @@ sudo snap set nextcloud ports.https=10443
 sudo snap set nextcloud php.memory-limit=512M
 sudo nextcloud.occ config:system:set trusted_domains 1 --value="__IP__"
 sudo nextcloud.occ config:system:set trusted_domains 2 --value="__NAME__.__DOMAIN__"
-sudo nextcloud.occ config:system:set trusted_domains 2 --value="localhost"
 sudo snap run nextcloud.occ app:install user_ldap
 sudo snap run nextcloud.occ app:enable user_ldap
 sudo nextcloud.occ config:app:set user_ldap ldapAgentName --value="dc=__DOMAIN__"
@@ -33,13 +32,13 @@ sudo nextcloud.occ config:app:set user_ldap ldap_display_name --value="cn"
 sudo nextcloud.occ config:app:set user_ldap ldap_group_filter --value="(&(|(objectclass=posixGroup)))"
 sudo nextcloud.occ config:app:set user_ldap ldap_group_member_assoc_attribute --value="gidNumber"
 sudo nextcloud.occ config:app:set user_ldap ldap_groupfilter_objectclass --value="posixGroup"
-sudo nextcloud.occ config:app:set user_ldap ldap_host --value="127.0.0.1"
-sudo nextcloud.occ config:app:set user_ldap ldap_login_filter --value="(&(|(objectclass=inetOrgPerson)(objectclass=person)(objectclass=posixAccount))(|(uid=%uid)))"
-sudo nextcloud.occ config:app:set user_ldap ldap_loginfilter_attributes --value="uid"
+sudo nextcloud.occ config:app:set user_ldap ldap_host --value="localhost"
+sudo nextcloud.occ config:app:set user_ldap ldap_login_filter --value="(&(|(objectclass=inetOrgPerson)(objectclass=organizationalPerson)(objectclass=person))(|(cn=%uid)(gidNumber=%uid)(homeDirectory=%uid)(loginShell=%uid)))"
+sudo nextcloud.occ config:app:set user_ldap ldap_loginfilter_attributes --value="cn\ngidNumber\nhomeDirectory\nloginShell"
 sudo nextcloud.occ config:app:set user_ldap ldap_port --value="389"
 sudo nextcloud.occ config:app:set user_ldap ldap_tls --value="0"
-sudo nextcloud.occ config:app:set user_ldap ldap_userfilter_objectclass --value="inetOrgPerson\nperson\nposixAccount"
-sudo nextcloud.occ config:app:set user_ldap ldap_userlist_filter --value="(|(objectclass=inetOrgPerson)(objectclass=person)(objectclass=posixAccount))"
+sudo nextcloud.occ config:app:set user_ldap ldap_userfilter_objectclass --value="inetOrgPerson\norganizationalPerson\nperson"
+sudo nextcloud.occ config:app:set user_ldap ldap_userlist_filter --value="(|(objectclass=inetOrgPerson)(objectclass=organizationalPerson)(objectclass=person))"
 sudo nextcloud.occ config:app:set user_ldap types --value="authentication"
 #sudo snap restart nextcloud
 sudo nextcloud.occ app:install onlyoffice

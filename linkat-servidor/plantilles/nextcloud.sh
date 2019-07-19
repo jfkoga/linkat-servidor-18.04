@@ -18,7 +18,7 @@ sudo snap set nextcloud ports.https=10443
 sudo snap set nextcloud php.memory-limit=512M
 sudo nextcloud.occ config:system:set trusted_domains 1 --value="__IP__"
 sudo nextcloud.occ config:system:set trusted_domains 2 --value="__NAME__.__DOMAIN__"
-sudo nextcloud.occ config:system:set trusted_domains 2 --value="localhost"
+sudo nextcloud.occ config:system:set trusted_domains 3 --value="localhost"
 sudo snap run nextcloud.occ app:install user_ldap
 sudo snap run nextcloud.occ app:enable user_ldap
 sudo nextcloud.occ config:app:set user_ldap ldapAgentName --value="dc=__DOMAIN__"
