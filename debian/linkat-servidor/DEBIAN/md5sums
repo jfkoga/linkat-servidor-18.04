@@ -1,6 +1,6 @@
 611fee8185e4c355cb20fc62d11d776e  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-bf4842398ac0d67263da72cdc5bc61ac  usr/share/doc/linkat-servidor/changelog.Debian.gz
+fb6dde0948b94853cd3f0da7bd2d103a  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 12bf97bdc06bc7d94c9d2b0f95866dbc  usr/share/linkat/linkat-servidor/configurador/acl.yml
 c6742688cadae7ff2b228990a9fa5e64  usr/share/linkat/linkat-servidor/configurador/clamav.yml
@@ -83,7 +83,7 @@ b184119561e7f02966741312433f6a2b  usr/share/linkat/linkat-servidor/plantilles/mu
 435b70e3b00da6df2c1e977ce5d6d1a9  usr/share/linkat/linkat-servidor/plantilles/named.conf.options
 d64834053de63e7e17f71b2f432af894  usr/share/linkat/linkat-servidor/plantilles/nextcloud-resetpass.sh
 390b08b86c3f184ae74086d50eb73fa5  usr/share/linkat/linkat-servidor/plantilles/nextcloud-restart.sh
-7bd845ed777afbf5371ec74b4c45f7f7  usr/share/linkat/linkat-servidor/plantilles/nextcloud.sh
+893b0c0b6fcdeb4d28e3a29499b97068  usr/share/linkat/linkat-servidor/plantilles/nextcloud.sh
 ae232919db16c220827003e883dcd5eb  usr/share/linkat/linkat-servidor/plantilles/nfs-kernel-server
 b98fe8751b4be54e69539323e8b586e2  usr/share/linkat/linkat-servidor/plantilles/onlyoffice.sh
 bfe7ade69d4190ddf27edcd703fb47d0  usr/share/linkat/linkat-servidor/plantilles/paperera_xarxa.conf
