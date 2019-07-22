@@ -15,4 +15,4 @@
         path: /usr/local/bin/nextcloud-restart.sh
         owner: lnadmin
         group: root
-        mode: 0770
+        mode: 0774

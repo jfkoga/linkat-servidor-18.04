@@ -1,1 +1,3 @@
 /etc/linkat/linkat-servidor/linkat-servidor.conf
+/etc/linkat/linkat-servidor/patches/01-nextcloud.sh
+/etc/linkat/linkat-servidor/patches/patches.sh

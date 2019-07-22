@@ -1,4 +1,5 @@
 ./linkat-servidor
 ./linkat-servidor.conf
+./patches
 ./linkat-servidor.desktop
 ./linkat-servidor.png
