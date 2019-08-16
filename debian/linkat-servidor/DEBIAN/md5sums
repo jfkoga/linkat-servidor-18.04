@@ -1,6 +1,6 @@
 611fee8185e4c355cb20fc62d11d776e  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-f3f10ec1c609b9824c54374739559e4d  usr/share/doc/linkat-servidor/changelog.Debian.gz
+a7fd54ed5186aecc64d14ca35ca650c3  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 12bf97bdc06bc7d94c9d2b0f95866dbc  usr/share/linkat/linkat-servidor/configurador/acl.yml
 c6742688cadae7ff2b228990a9fa5e64  usr/share/linkat/linkat-servidor/configurador/clamav.yml
@@ -30,8 +30,9 @@ d5adeac74d2a43dd8a15c44cfd377cfa  usr/share/linkat/linkat-servidor/configurador/
 557ffbf48d44e2118b2a7778b1c6c13d  usr/share/linkat/linkat-servidor/linkat-servidor-banner.png
 7a7a42c589d58d287e2ed131f1702087  usr/share/linkat/linkat-servidor/linkat-servidor.install
 957dc06133aa9e53670c05fdce3e4d1e  usr/share/linkat/linkat-servidor/linkat-servidor.sh
-8e88d5979939551d0cd962afcd8e61c8  usr/share/linkat/linkat-servidor/patches/01-nextcloud.sh
-3701954aa211baf3deb269d417e6f95b  usr/share/linkat/linkat-servidor/patches/patches.sh
+38ae4700ec94068e9daf3d41a50db7de  usr/share/linkat/linkat-servidor/patches/01-nextcloud.sh
+b2cc432abb1cec36f87dd34202bdbb8d  usr/share/linkat/linkat-servidor/patches/02-smb.sh
+e7eb18f8d02327647fc413b11462d757  usr/share/linkat/linkat-servidor/patches/patches.sh
 630574b6e931ad3992e7a949d44c28f0  usr/share/linkat/linkat-servidor/plantilles/.edu.xtec.properties
 ab162a284638dbd9560d966228226d4f  usr/share/linkat/linkat-servidor/plantilles/01_create_database.sql
 de7df81e0d14ac18236dd0210dd6c6c7  usr/share/linkat/linkat-servidor/plantilles/02_create_user_grants.sql
@@ -98,7 +99,7 @@ ff4ab137b613862efa82e728dd8b7e44  usr/share/linkat/linkat-servidor/plantilles/sa
 df5b7f941ea77782142fe5643f8aa9c0  usr/share/linkat/linkat-servidor/plantilles/schema_convert.conf
 620d8c19560e8bc7fc0d7d2c6e1ebc99  usr/share/linkat/linkat-servidor/plantilles/servidor.info
 b075610b9323c8b782b3c7a4ca17fef3  usr/share/linkat/linkat-servidor/plantilles/smb-ldap.conf
-6456d7e94289cde30a15e9698157f174  usr/share/linkat/linkat-servidor/plantilles/smb.conf
+c9e64e59c3c117337ae9e32229333ffe  usr/share/linkat/linkat-servidor/plantilles/smb.conf
 eb3b383e89ac3538482a3dac40ed1b9c  usr/share/linkat/linkat-servidor/plantilles/smbldap-populate.sh
 98a8418a268c6fa6dd5f4a34d46a09fa  usr/share/linkat/linkat-servidor/plantilles/smbldap.conf
 168b5bf29cd924aaaed7f15dd1a51b61  usr/share/linkat/linkat-servidor/plantilles/smbldap_bind.conf
