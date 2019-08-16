@@ -15,6 +15,6 @@ cp $NC_TEMPLATE $NC_RESTART
                         sed -i "s/__NAME__/$NEW_NAME/g" /usr/local/bin/nextcloud-restart.sh
                         sed -i "s/__DOMAIN__/$NEW_DOMAIN/g" /usr/local/bin/nextcloud-restart.sh
                         sed -i "s/__IP__/$NEW_IP/g" /usr/local/bin/nextcloud-restart.sh
-                fi
+        fi
 # Assignem permisos a nextcloud-restart
 chmod 570 $NC_RESTART
