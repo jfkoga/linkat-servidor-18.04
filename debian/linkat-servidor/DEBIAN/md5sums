@@ -1,6 +1,6 @@
 611fee8185e4c355cb20fc62d11d776e  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-b312c713105d41161d27de358b842abc  usr/share/doc/linkat-servidor/changelog.Debian.gz
+d2269503509ea8d4b53b3e4f83dcbd5e  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 12bf97bdc06bc7d94c9d2b0f95866dbc  usr/share/linkat/linkat-servidor/configurador/acl.yml
 c6742688cadae7ff2b228990a9fa5e64  usr/share/linkat/linkat-servidor/configurador/clamav.yml
@@ -31,7 +31,7 @@ d5adeac74d2a43dd8a15c44cfd377cfa  usr/share/linkat/linkat-servidor/configurador/
 7a7a42c589d58d287e2ed131f1702087  usr/share/linkat/linkat-servidor/linkat-servidor.install
 957dc06133aa9e53670c05fdce3e4d1e  usr/share/linkat/linkat-servidor/linkat-servidor.sh
 38ae4700ec94068e9daf3d41a50db7de  usr/share/linkat/linkat-servidor/patches/01-nextcloud.sh
-b2cc432abb1cec36f87dd34202bdbb8d  usr/share/linkat/linkat-servidor/patches/02-smb.sh
+7df62d4f99a49843a81b9602559a6178  usr/share/linkat/linkat-servidor/patches/02-smb.sh
 e7eb18f8d02327647fc413b11462d757  usr/share/linkat/linkat-servidor/patches/patches.sh
 630574b6e931ad3992e7a949d44c28f0  usr/share/linkat/linkat-servidor/plantilles/.edu.xtec.properties
 ab162a284638dbd9560d966228226d4f  usr/share/linkat/linkat-servidor/plantilles/01_create_database.sql
