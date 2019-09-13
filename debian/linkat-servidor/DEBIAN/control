@@ -1,8 +1,8 @@
 Package: linkat-servidor
-Version: 18.04-119
+Version: 18.04-120
 Architecture: all
 Maintainer: Francesc Konate <linkat@xtec.cat>
-Installed-Size: 2968
+Installed-Size: 2969
 Depends: linkat-lnadmin, linkat-anuser, linkat-ansible, linkat-mp-servidor
 Section: linkat
 Priority: optional
