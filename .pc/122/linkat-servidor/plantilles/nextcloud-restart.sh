@@ -7,13 +7,9 @@ if [ $? -gt 0 ]; then
 	exit 11
 else
 
-# Apparmor Nextcloud
-apparmorLink="/etc/apparmor.d/disable/usr.lib.snapd.snap-confine.real"
-if [[ ! -e $apparmorLink ]]; then
-        sudo ln -s /etc/apparmor.d/usr.lib.snapd.snap-confine.real /etc/apparmor.d/disable/
-        sudo apparmor_parser -R /etc/apparmor.d/usr.lib.snapd.snap-confine.real
-fi
-
+# Set Apparmour snap permissions to rw
+# sudo sed -i '/tmp\/snap.*\/ w/ s/w/rw/g' /etc/apparmor.d/usr.lib.snapd.snap-confine.real
+# sudo apparmor_parser -r /etc/apparmor.d/usr.lib.snapd.snap-confine.real
 
 # Reconfigure Nextcloud snap
 sudo nextcloud.enable-https self-signed
