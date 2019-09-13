@@ -1,17 +1,17 @@
 #!/bin/bash
 
-## Nextcloud
-
-zenity --width="250" --question --title="Reinici Nextcloud" --text="Voleu reiniciar el servei Nextcloud?"
-if [ $? -gt 0 ]; then
-	exit 11
-else
-
-# Set Apparmour snap permissions to rw
+# Set Apparmor snap permissions to rw
 # sudo sed -i '/tmp\/snap.*\/ w/ s/w/rw/g' /etc/apparmor.d/usr.lib.snapd.snap-confine.real
 # sudo apparmor_parser -r /etc/apparmor.d/usr.lib.snapd.snap-confine.real
 
-# Reconfigure Nextcloud snap
+
+# Install and Configure Nextcloud via snap
+sudo snap install nextcloud
+if [ -f /etc/modalitat_linkat ]; then
+        sudo /usr/share/linkat/linkat-servidor/configurador/files/nextcloud-resetpass.sh > /dev/null 2>&1
+else
+        sudo nextcloud.manual-install lnadmin __PASSLNADMIN__
+fi
 sudo nextcloud.enable-https self-signed
 sudo snap set nextcloud ports.http=81
 sudo snap set nextcloud ports.https=10443
@@ -45,12 +45,21 @@ sudo nextcloud.occ config:app:set user_ldap types --value="authentication"
 sudo nextcloud.occ app:install onlyoffice
 sudo nextcloud.occ app:enable onlyoffice
 sudo nextcloud.occ config:app:set onlyoffice DocumentServerUrl --value="https://__IP__:10445/"
+sudo nextcloud.occ config:app:set onlyoffice editFormats --value="{\"csv\":\"false\",\"doc\":\"false\",\"docm\":\"false\",\"docx\":\"true\",\"dotx\":\"false\",\"epub\":\"false\",\"html\":\"false\",\"odp\":\"false\",\"ods\":\"true\",\"odt\":\"true\",\"pdf\":\"false\",\"potm\":\"false\",\"potx\":\"false\",\"ppsm\":\"false\",\"ppsx\":\"false\",\"ppt\":\"false\",\"pptm\":\"false\",\"pptx\":\"true\",\"rtf\":\"false\",\"txt\":\"false\",\"xls\":\"false\",\"xlsm\":\"false\",\"xlsx\":\"true\",\"xltm\":\"false\",\"xltx\":\"false\"}"
+sudo nextcloud.occ config:app:set onlyoffice defFormats --value="{\"csv\":\"false\",\"doc\":\"true\",\"docm\":\"false\",\"docx\":\"true\",\"dotx\":\"false\",\"epub\":\"false\",\"html\":\"false\",\"odp\":\"true\",\"ods\":\"true\",\"odt\":\"true\",\"pdf\":\"true\",\"potm\":\"false\",\"potx\":\"false\",\"ppsm\":\"false\",\"ppsx\":\"false\",\"ppt\":\"true\",\"pptm\":\"false\",\"pptx\":\"true\",\"rtf\":\"false\",\"txt\":\"false\",\"xls\":\"true\",\"xlsm\":\"false\",\"xlsx\":\"true\",\"xltm\":\"false\",\"xltx\":\"false\"}"
 #sudo nextcloud.occ config:app:set --value https:\/\/__IP__:10445\/ onlyoffice DocumentServerUrl
 sudo nextcloud.occ config:system:set onlyoffice verify_peer_off --value="true"
 # Resolve onlyoffice connection error
 sudo nextcloud.occ config:app:delete onlyoffice settings_error
-sudo snap restart nextcloud
-
-zenity --width="250" --info --title="Reinici Nextcloud" --text="S'ha reiniciat el servei Nextcloud correctament."
-
+# Change default nextcloud storage folder
+if [ ! -f /etc/modalitat_linkat ]; then
+	sudo snap disable nextcloud
+	sudo mkdir -p /srv/app/nextcloud 
+	sudo mv /var/snap/nextcloud/common/nextcloud/data/ /srv/app/nextcloud/
+	sudo mkdir /var/snap/nextcloud/common/nextcloud/data/
+	sudo mount --bind /srv/app/nextcloud/data/ /var/snap/nextcloud/common/nextcloud/data/
+	sudo echo "/srv/app/nextcloud/data/        /var/snap/nextcloud/common/nextcloud/data/      none    bind    0       0" >> /etc/fstab
+	sudo snap enable nextcloud
 fi
+
+sudo snap restart nextcloud

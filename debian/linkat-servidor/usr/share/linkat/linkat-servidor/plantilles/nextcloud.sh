@@ -1,8 +1,9 @@
 #!/bin/bash
 
-# Set Apparmor snap permissions to rw
-# sudo sed -i '/tmp\/snap.*\/ w/ s/w/rw/g' /etc/apparmor.d/usr.lib.snapd.snap-confine.real
-# sudo apparmor_parser -r /etc/apparmor.d/usr.lib.snapd.snap-confine.real
+# Apparmor Nextcloud
+sudo ln -s /etc/apparmor.d/usr.lib.snapd.snap-confine.real /etc/apparmor.d/disable/
+sudo apparmor_parser -R /etc/apparmor.d/usr.lib.snapd.snap-confine.real
+sudo snap refresh core
 
 
 # Install and Configure Nextcloud via snap

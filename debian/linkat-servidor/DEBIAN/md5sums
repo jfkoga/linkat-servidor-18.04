@@ -86,7 +86,7 @@ b184119561e7f02966741312433f6a2b  usr/share/linkat/linkat-servidor/plantilles/mu
 435b70e3b00da6df2c1e977ce5d6d1a9  usr/share/linkat/linkat-servidor/plantilles/named.conf.options
 d64834053de63e7e17f71b2f432af894  usr/share/linkat/linkat-servidor/plantilles/nextcloud-resetpass.sh
 960f42d4ce6a0463c79a1cb79f848d5c  usr/share/linkat/linkat-servidor/plantilles/nextcloud-restart.sh
-b1fe8f8b707e38b3c358ab9756981159  usr/share/linkat/linkat-servidor/plantilles/nextcloud.sh
+f6b7d1699eee93bf8df768388df7c30c  usr/share/linkat/linkat-servidor/plantilles/nextcloud.sh
 ae232919db16c220827003e883dcd5eb  usr/share/linkat/linkat-servidor/plantilles/nfs-kernel-server
 b98fe8751b4be54e69539323e8b586e2  usr/share/linkat/linkat-servidor/plantilles/onlyoffice.sh
 bfe7ade69d4190ddf27edcd703fb47d0  usr/share/linkat/linkat-servidor/plantilles/paperera_xarxa.conf
