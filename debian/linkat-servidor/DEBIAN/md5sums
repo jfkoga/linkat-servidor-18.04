@@ -1,6 +1,6 @@
 611fee8185e4c355cb20fc62d11d776e  usr/share/applications/linkat-servidor.desktop
 92aab999c6356eab1d28e8c7d56a8179  usr/share/doc/linkat-servidor/README.Debian
-8dafe39c94f8bd2df706b26ff6369bd1  usr/share/doc/linkat-servidor/changelog.Debian.gz
+788fa4bec3b564301486715b4cee04c1  usr/share/doc/linkat-servidor/changelog.Debian.gz
 15936930ca5341b363c7149611597edf  usr/share/doc/linkat-servidor/copyright
 12bf97bdc06bc7d94c9d2b0f95866dbc  usr/share/linkat/linkat-servidor/configurador/acl.yml
 c6742688cadae7ff2b228990a9fa5e64  usr/share/linkat/linkat-servidor/configurador/clamav.yml
@@ -15,7 +15,7 @@ decfc0a78c214559ad7f7c4f61b37c4c  usr/share/linkat/linkat-servidor/configurador/
 3988d87f4a08a115e0c6b54ce65a4a40  usr/share/linkat/linkat-servidor/configurador/roles/docker/tasks/main.yml
 99cb6f7443d2c0986cde0b35d6ca7f91  usr/share/linkat/linkat-servidor/configurador/roles/hostname/tasks/main.yml
 29102d0672029868a8390b0bb3063166  usr/share/linkat/linkat-servidor/configurador/roles/jclic/tasks/main.yml
-820fe1d36ccb41b154591aaa30945be0  usr/share/linkat/linkat-servidor/configurador/roles/ldap/tasks/main.yml
+16782aa6b0c9863e688df0528b51518c  usr/share/linkat/linkat-servidor/configurador/roles/ldap/tasks/main.yml
 682b41586132d900c92e741c2700fcae  usr/share/linkat/linkat-servidor/configurador/roles/net/tasks/main.yml
 63861d083d4ad79fe6d7e9b31a098965  usr/share/linkat/linkat-servidor/configurador/roles/nfs/tasks/main.yml
 2f74ee1f4175f575269169f26b8d9625  usr/share/linkat/linkat-servidor/configurador/roles/permisos/tasks/main.yml
@@ -32,8 +32,7 @@ d5adeac74d2a43dd8a15c44cfd377cfa  usr/share/linkat/linkat-servidor/configurador/
 957dc06133aa9e53670c05fdce3e4d1e  usr/share/linkat/linkat-servidor/linkat-servidor.sh
 38ae4700ec94068e9daf3d41a50db7de  usr/share/linkat/linkat-servidor/patches/01-nextcloud.sh
 a937857cbdd8f32b6f1a1f5cc3effa11  usr/share/linkat/linkat-servidor/patches/02-smb.sh
-2c24c1986ba87cbc919abe32957d8c3d  usr/share/linkat/linkat-servidor/patches/03-snap.sh
-59fd64846bf63eec479fe8233f0d0708  usr/share/linkat/linkat-servidor/patches/patches.sh
+e7eb18f8d02327647fc413b11462d757  usr/share/linkat/linkat-servidor/patches/patches.sh
 630574b6e931ad3992e7a949d44c28f0  usr/share/linkat/linkat-servidor/plantilles/.edu.xtec.properties
 ab162a284638dbd9560d966228226d4f  usr/share/linkat/linkat-servidor/plantilles/01_create_database.sql
 de7df81e0d14ac18236dd0210dd6c6c7  usr/share/linkat/linkat-servidor/plantilles/02_create_user_grants.sql
@@ -86,8 +85,8 @@ b184119561e7f02966741312433f6a2b  usr/share/linkat/linkat-servidor/plantilles/mu
 881a8ecd9206f08fe7345077866748d9  usr/share/linkat/linkat-servidor/plantilles/named.conf.local
 435b70e3b00da6df2c1e977ce5d6d1a9  usr/share/linkat/linkat-servidor/plantilles/named.conf.options
 d64834053de63e7e17f71b2f432af894  usr/share/linkat/linkat-servidor/plantilles/nextcloud-resetpass.sh
-80b3502cfab2a0ef6ef23c864ec081f8  usr/share/linkat/linkat-servidor/plantilles/nextcloud-restart.sh
-bda813507368f467de61ca836740de7c  usr/share/linkat/linkat-servidor/plantilles/nextcloud.sh
+02b7503a593ee715c4ff1a29ad8cff6c  usr/share/linkat/linkat-servidor/plantilles/nextcloud-restart.sh
+d4deb7060157060245ba4b535e61ea34  usr/share/linkat/linkat-servidor/plantilles/nextcloud.sh
 ae232919db16c220827003e883dcd5eb  usr/share/linkat/linkat-servidor/plantilles/nfs-kernel-server
 b98fe8751b4be54e69539323e8b586e2  usr/share/linkat/linkat-servidor/plantilles/onlyoffice.sh
 bfe7ade69d4190ddf27edcd703fb47d0  usr/share/linkat/linkat-servidor/plantilles/paperera_xarxa.conf
@@ -106,11 +105,6 @@ eb3b383e89ac3538482a3dac40ed1b9c  usr/share/linkat/linkat-servidor/plantilles/sm
 168b5bf29cd924aaaed7f15dd1a51b61  usr/share/linkat/linkat-servidor/plantilles/smbldap_bind.conf
 60113df405695fc6261f273c91852478  usr/share/linkat/linkat-servidor/plantilles/treball.conf
 df7beedfd6f80e4a56826116e0eb18f6  usr/share/linkat/linkat-servidor/plantilles/uid_index.ldif
-bc6c63969998c65029d195e7c9394d24  usr/share/linkat/linkat-servidor/plantilles/usr.bin.freshclam
-163e5336edf2638eee0bc662e823be5d  usr/share/linkat/linkat-servidor/plantilles/usr.lib.snapd.snap-confine.real
-aa137e8edda6e5db06cef8c4aeea4399  usr/share/linkat/linkat-servidor/plantilles/usr.sbin.clamd
-8805d8e499882a1e7c76e2ee82b37ded  usr/share/linkat/linkat-servidor/plantilles/usr.sbin.cupsd
-58f834e1415e5cd6fcdcc986e142c5d1  usr/share/linkat/linkat-servidor/plantilles/usr.sbin.ntpd
 bc44aff594fec47513a741fba7a23e4b  usr/share/linkat/linkat-servidor/plantilles/webldap-useradminconfig
 98e12a50618e352139acc2616fe0ccfd  usr/share/linkat/linkat-servidor/plantilles/webmin.acl
 82c761ac5c3ae05a3e9bf9a589cec673  usr/share/linkat/linkat-servidor/plantilles/websambaconfig
